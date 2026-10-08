@@ -1,0 +1,38 @@
+name: crawl-original-site
+on:
+  push:
+    branches: [arena/39451859-aven]
+    paths: ['.github/workflows/crawl.yml']
+permissions:
+  contents: write
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mirror HTML pages
+        run: |
+          set +e
+          mkdir -p _crawl
+          cd _crawl
+          wget --recursive --level=4 --domains=avanthienggcollege.ac.in --adjust-extension \
+            --reject-regex '\.(pdf|PDF|Pdf|jpe?g|JPE?G|png|PNG|gif|GIF|webp|mp4|MP4|zip|docx?|xlsx?|pptx?|svg|ico|css|js|woff2?|ttf|eot)(\?.*)?$' \
+            -e robots=off --wait=0.15 --tries=2 --timeout=25 --no-verbose \
+            -o ../wget.log https://avanthienggcollege.ac.in/
+          wget -q -O sitemap.xml https://avanthienggcollege.ac.in/sitemap.xml
+          # also grab every sitemap URL that is a page (not a file)
+          grep -oE '<loc>[^<]+' sitemap.xml | sed 's/<loc>//' | grep -viE '\.(pdf|jpe?g|png)$' > sitemap_pages.txt
+          wget --adjust-extension -x -nc -e robots=off --wait=0.1 --tries=2 --timeout=25 --no-verbose -i sitemap_pages.txt -a ../wget.log
+          cd ..
+          find _crawl -type f | wc -l
+          du -sh _crawl
+          tail -n 30 wget.log
+          mv wget.log _crawl/
+      - name: Commit crawl
+        run: |
+          git config user.name "crawler"
+          git config user.email "crawler@users.noreply.github.com"
+          git add _crawl
+          git commit -m "Crawl of original site [skip ci]" || echo nothing
+          git push
