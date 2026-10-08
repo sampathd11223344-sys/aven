@@ -1,0 +1,110 @@
+<%
+  const featured = (site.nav || []).filter(n => n.featured);
+  const isCur = (h) => h && h !== '#' && (h === path || decodeURI(h) === decodeURI(path));
+  function flyout(items, depth) {
+    let o = `<ul class="dd-list${depth > 1 ? ' sub' : ''}">`;
+    for (const it of items) {
+      const kids = (it.children || []).length;
+      o += `<li class="${kids ? 'has-sub' : ''}">`;
+      if (it.href && it.href !== '#') o += `<a href="${esc(it.href)}"${linkAttrs(it.href)}${isCur(it.href) ? ' aria-current="page"' : ''}>${esc(it.label)}${isFile(it.href) ? '<span class="tag">PDF</span>' : ''}${kids ? icon('chevr','sub-chev') : ''}</a>`;
+      else o += `<button type="button" class="dd-sub-toggle">${esc(it.label)}${icon('chevr','sub-chev')}</button>`;
+      if (kids) o += flyout(it.children, depth + 1);
+      o += `</li>`;
+    }
+    return o + `</ul>`;
+  }
+  function tree(items, depth) {
+    let o = `<ul class="tree d${depth}">`;
+    for (const it of items) {
+      const kids = (it.children || []).length;
+      o += `<li data-label="${esc(it.label.toLowerCase())}">`;
+      if (it.href && it.href !== '#') o += `<a href="${esc(it.href)}"${linkAttrs(it.href)}>${esc(it.label)}${isFile(it.href) ? '<span class="tag">PDF</span>' : ''}${isExternal(it.href) ? icon('ext','ext-ico') : ''}</a>`;
+      else o += `<span class="tree-label">${esc(it.label)}</span>`;
+      if (kids) o += tree(it.children, depth + 1);
+      o += `</li>`;
+    }
+    return o + `</ul>`;
+  }
+%>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-contact">
+      <a href="tel:<%= (S.admissionPhone||'').replace(/[^+\d]/g,'') %>"><%- icon('phone') %> Admissions: <%= S.admissionPhone %></a>
+      <a href="mailto:<%= S.email %>" class="hide-sm"><%- icon('mail') %> <%= S.email %></a>
+    </div>
+    <nav class="topbar-links" aria-label="Utility">
+      <% (site.topLinks || []).forEach(l => { %><a href="<%= l.href %>"<%- linkAttrs(l.href) %>><%= l.label %></a><% }) %>
+    </nav>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-main">
+    <a class="brand" href="/" aria-label="<%= S.name %> – Home">
+      <img src="<%= S.logo %>" alt="<%= S.name %>" class="brand-logo" width="260" height="64">
+    </a>
+    <div class="header-tools">
+      <form class="header-search" action="/search" role="search">
+        <%- icon('search') %>
+        <input type="search" name="q" placeholder="Search pages, notices, events…" aria-label="Search the website" autocomplete="off">
+      </form>
+      <% if (S.naacLogo) { %><a class="naac" href="<%= S.naacLink || '#' %>"<%- linkAttrs(S.naacLink) %> title="NAAC A+"><img src="<%= S.naacLogo %>" alt="NAAC A+ accredited" width="54" height="54"></a><% } %>
+      <a class="btn btn-accent header-cta" href="<%= S.applyLink || '/admissionforms' %>"<%- linkAttrs(S.applyLink) %>>Apply Now</a>
+      <a class="icon-btn mobile-only" href="/search" aria-label="Search"><%- icon('search') %></a>
+      <button class="icon-btn mobile-only" data-open-menu aria-label="Open menu"><%- icon('menu') %></button>
+    </div>
+  </div>
+  <nav class="navbar" aria-label="Main">
+    <div class="container navbar-inner">
+      <ul class="nav-list" id="navList">
+        <% featured.forEach((n, i) => { const kids = (n.children||[]).length; %>
+          <li class="nav-item<%= kids ? ' has-dd' : '' %>">
+            <% if (!kids) { %>
+              <a class="nav-link<%= isCur(n.href) ? ' is-active' : '' %>" href="<%= n.href %>"<%- linkAttrs(n.href) %>><%= n.label %></a>
+            <% } else { %>
+              <button class="nav-link" aria-expanded="false"><%= n.label %><%- icon('chev','chev') %></button>
+              <div class="dd"><%- flyout(n.children, 1) %></div>
+            <% } %>
+          </li>
+        <% }) %>
+      </ul>
+      <button class="all-menus" data-open-menu aria-haspopup="dialog"><%- icon('grid') %> All Menus <span><%= (site.nav||[]).length %></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- Full site menu (all sections, every deep link) -->
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <div class="menu-panel">
+    <div class="menu-head">
+      <div class="container menu-head-inner">
+        <strong>All Menus</strong>
+        <label class="menu-filter"><%- icon('search') %><input type="search" id="menuFilter" placeholder="Filter menu… e.g. syllabus, NSS, BOS" aria-label="Filter menu"></label>
+        <button class="icon-btn" data-close-menu aria-label="Close menu"><%- icon('x') %></button>
+      </div>
+    </div>
+    <div class="container menu-body">
+      <div class="menu-quick">
+        <% (site.topLinks || []).forEach(l => { %><a href="<%= l.href %>"<%- linkAttrs(l.href) %>><%= l.label %></a><% }) %>
+      </div>
+      <div class="menu-grid">
+        <% (site.nav || []).forEach(n => { %>
+          <section class="menu-sec" data-label="<%= n.label.toLowerCase() %>">
+            <h3><% if (n.href && n.href !== '#') { %><a href="<%= n.href %>"<%- linkAttrs(n.href) %>><%= n.label %></a><% } else { %><button type="button" class="menu-sec-toggle"><%= n.label %><%- icon('chev','chev') %></button><% } %></h3>
+            <% if ((n.children||[]).length) { %><%- tree(n.children, 1) %><% } %>
+          </section>
+        <% }) %>
+      </div>
+      <p class="menu-empty" hidden>No menu items match your filter.</p>
+    </div>
+  </div>
+</div>
+
+<% if (user) { %>
+<div class="admin-bar">
+  <a href="/admin"><%- icon('grid') %> Admin panel</a>
+  <% if (typeof page !== 'undefined' && page) { %><a href="/admin#/pages/edit?slug=<%= encodeURIComponent(page.slug) %>"><%- icon('edit') %> Edit this page</a><% } %>
+  <% if (path === '/') { %><a href="/admin#/home"><%- icon('edit') %> Edit homepage</a><% } %>
+  <span>Signed in as <%= user.username %></span>
+</div>
+<% } %>

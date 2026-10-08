@@ -1,0 +1,15 @@
+node_modules/
+.env
+*.log
+
+# raw crawl of the original site (input for scripts/import-crawl.js) – too large for git
+_crawl/
+
+# runtime data written by the server (content lives in data/site.json + data/pages.json)
+data/sessions/
+data/backups/
+data/assets/
+data/users.json
+data/messages.json
+data/activity.json
+data/stats.json

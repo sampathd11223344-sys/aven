@@ -1,0 +1,41 @@
+<%- include('partials/head', { description: (page.title + (page.subtitle ? ' – ' + page.subtitle : '') + ' | ' + S.name) }) %>
+<%- include('partials/header') %>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/"><%- icon('home') %> Home</a>
+        <% (trail || []).slice(0, -1).forEach(t => { %>
+          <span>/</span><% if (t.href && t.href !== '#') { %><a href="<%= t.href %>"><%= t.label %></a><% } else { %><span><%= t.label %></span><% } %>
+        <% }) %>
+        <span>/</span><span aria-current="page"><%= trail && trail.length ? trail[trail.length-1].label : page.title %></span>
+      </nav>
+      <h1><%= page.title %></h1>
+      <% if (page.subtitle) { %><p class="page-sub"><%= page.subtitle %></p><% } %>
+      <% if (page.status !== 'published') { %><p class="draft-flag">Draft – only visible to signed-in editors</p><% } %>
+    </div>
+  </section>
+
+  <section class="section page-section">
+    <div class="container <%= section && !isCommittee ? 'page-layout' : '' %>">
+      <% if (section && !isCommittee) { %>
+        <aside class="side-nav" aria-label="In this section">
+          <h4><%= section.title %></h4>
+          <ul>
+            <% section.items.forEach(it => { const cur = it.href && decodeURI(it.href).toLowerCase() === section.current; %>
+              <li><% if (it.href && it.href !== '#') { %><a href="<%= it.href %>"<%- linkAttrs(it.href) %><%- cur ? ' aria-current="page" class="is-current"' : '' %>><%= it.label %><% if (isFile(it.href)) { %><span class="tag">PDF</span><% } %></a><% } else { %><span><%= it.label %></span><% } %>
+                <% if ((it.children||[]).length) { %><ul><% it.children.forEach(c => { %><li><a href="<%= c.href %>"<%- linkAttrs(c.href) %>><%= c.label %></a></li><% }) %></ul><% } %>
+              </li>
+            <% }) %>
+          </ul>
+        </aside>
+      <% } %>
+      <article class="content<%= isCommittee ? ' committee' : '' %>">
+        <%- page.html %>
+      </article>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

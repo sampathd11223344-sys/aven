@@ -1,0 +1,59 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/"><%- icon('home') %> Home</a><span>/</span><span aria-current="page">Contact Us</span></nav>
+      <h1>Contact Us</h1>
+      <p class="page-sub">We are Working Monday to Saturday. You can visit our office during the hours below.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-col">
+        <div class="card reveal">
+          <h3>Contact Information</h3>
+          <ul class="contact-list">
+            <li><span class="ci"><%- icon('pin') %></span><div><b>Address</b><%= S.contactAddress || S.address %></div></li>
+            <li><span class="ci"><%- icon('phone') %></span><div><b>For Admission</b><a href="tel:<%= (S.admissionPhone||'').replace(/[^+\d]/g,'') %>"><%= S.admissionPhone %></a></div></li>
+            <li><span class="ci"><%- icon('phone') %></span><div><b>For Others</b><a href="tel:<%= (S.otherPhone||'').replace(/[^+\d]/g,'') %>"><%= S.otherPhone %></a></div></li>
+            <li><span class="ci"><%- icon('mail') %></span><div><b>E-Mail</b><a href="mailto:<%= S.email %>"><%= S.email %></a></div></li>
+            <li><span class="ci"><%- icon('file') %></span><div><b>Fax</b><%= S.fax %></div></li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Office Hours</h3>
+          <div class="hours"><div><span><%= S.hours %></span></div><div><span><%= S.hoursClosed %></span></div></div>
+        </div>
+      </div>
+      <div class="card reveal" id="enquiry">
+        <h3>Send us an enquiry</h3>
+        <% if (sent) { %><div class="alert ok">Thank you! Your message has been received. Our office will contact you soon.</div><% } %>
+        <form class="enquiry-form" action="/enquiry" method="post" data-ajax>
+          <input type="hidden" name="back" value="/contact_us">
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row">
+            <label>Full name<input type="text" name="name" required maxlength="120"></label>
+            <label>Phone<input type="tel" name="phone" maxlength="30" pattern="[0-9+\-\s]{7,}"></label>
+          </div>
+          <label>Email<input type="email" name="email" maxlength="160"></label>
+          <label>Subject
+            <select name="subject">
+              <option>Admission enquiry</option><option>B.Tech admissions</option><option>M.Tech / MBA / MCA admissions</option><option>Polytechnic admissions</option><option>Examinations</option><option>Placements</option><option>General</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="5" required maxlength="4000"></textarea></label>
+          <button class="btn btn-primary" type="submit"><%- icon('send') %> Send enquiry</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </div>
+    <div class="container" style="margin-top:28px">
+      <iframe class="map" title="Google Map – <%= S.name %>" src="<%= S.mapEmbed %>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

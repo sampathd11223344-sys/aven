@@ -1,0 +1,67 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="<%= S.logo %>" alt="<%= S.name %>" class="footer-logo" loading="lazy">
+      <ul class="footer-contact">
+        <li><%- icon('pin') %> <span><%= S.address %></span></li>
+        <li><%- icon('phone') %> <span>Admission: <a href="tel:<%= (S.admissionPhone||'').replace(/[^+\d]/g,'') %>"><%= S.admissionPhone %></a><br>Others: <a href="tel:<%= (S.otherPhone||'').replace(/[^+\d]/g,'') %>"><%= S.otherPhone %></a></span></li>
+        <li><%- icon('mail') %> <a href="mailto:<%= S.email %>"><%= S.email %></a></li>
+        <li><%- icon('clock') %> <span><%= S.hours %></span></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Our Institutions</h5>
+      <ul class="inst-list">
+        <% (site.institutions || []).forEach(i => { %>
+          <li><% if (i.href) { %><a href="<%= i.href %>"<%- linkAttrs(i.href) %>><%= i.name %></a><% } else { %><%= i.name %><% } %> <small><%= i.code %></small></li>
+        <% }) %>
+      </ul>
+    </div>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <% (site.topLinks || []).forEach(l => { %><li><a href="<%= l.href %>"<%- linkAttrs(l.href) %>><%= l.label %></a></li><% }) %>
+        <% (site.info || []).slice(1, 3).forEach(l => { %><li><a href="<%= l.href %>"<%- linkAttrs(l.href) %>><%= l.label %></a></li><% }) %>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Quick Contact</h5>
+      <form class="quick-form" action="/enquiry" method="post" data-ajax>
+        <input type="hidden" name="back" value="<%= path %>">
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="text" name="name" placeholder="Your name" required maxlength="120" aria-label="Your name">
+        <input type="email" name="email" placeholder="Email address" required maxlength="160" aria-label="Email">
+        <textarea name="message" rows="3" placeholder="Your message" required maxlength="4000" aria-label="Message"></textarea>
+        <input type="hidden" name="subject" value="Quick contact (footer)">
+        <button class="btn btn-accent" type="submit"><%- icon('send') %> Send message</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span><%= S.footerCredit %></span>
+      <span>Visitors Count: <b><%= visitors.toLocaleString('en-IN') %></b> · Updated On: <%= today %></span>
+    </div>
+  </div>
+</footer>
+
+<% if (S.videoEnabled && (site.videos || []).length) { %>
+<div class="float-video" id="floatVideo" data-videos='<%= JSON.stringify((site.videos||[]).map(v => v.src)) %>' hidden>
+  <video muted autoplay loop playsinline preload="none"></video>
+  <div class="fv-controls">
+    <button data-fv="play" aria-label="Pause"><%- icon('pause') %></button>
+    <button data-fv="mute" aria-label="Unmute"><%- icon('mute') %></button>
+    <button data-fv="prev" aria-label="Previous video"><%- icon('left') %></button>
+    <button data-fv="next" aria-label="Next video"><%- icon('right') %></button>
+    <button data-fv="close" aria-label="Close video"><%- icon('x') %></button>
+  </div>
+</div>
+<% } %>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><%- icon('up') %></button>
+<div class="lightbox" id="lightbox" hidden><button class="icon-btn lb-close" aria-label="Close"><%- icon('x') %></button><button class="icon-btn lb-prev" aria-label="Previous"><%- icon('left') %></button><img alt=""><button class="icon-btn lb-next" aria-label="Next"><%- icon('right') %></button></div>
+<script src="/static/js/site.js" defer></script>
+</body>
+</html>

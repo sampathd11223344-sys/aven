@@ -1,0 +1,205 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" data-hero>
+    <div class="hero-slides">
+      <% (site.hero || []).forEach((h, i) => { %>
+        <div class="hero-slide<%= i === 0 ? ' active' : '' %>" style="background-image:url('<%= h.image %>')" role="img" aria-label="<%= h.caption || 'Campus photo ' + (i+1) %>"></div>
+      <% }) %>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow light"><%= S.name %></span>
+      <h1><%= S.heroTitle %></h1>
+      <p><%= S.heroText %></p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="/courses">Explore Courses</a>
+        <% const tour = (site.quick || []).find(q => /tour/i.test(q.label)); if (tour) { %>
+          <a class="btn btn-ghost" href="<%= tour.href %>"<%- linkAttrs(tour.href) %>><%- icon('play') %> College Virtual Tour</a>
+        <% } %>
+      </div>
+      <div class="hero-dots">
+        <% (site.hero || []).forEach((h, i) => { %><button aria-label="Slide <%= i+1 %>" class="<%= i === 0 ? 'active' : '' %>"></button><% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-label="Latest notifications">
+    <div class="container ticker-inner">
+      <span class="ticker-label">Latest</span>
+      <div class="ticker-viewport"><div class="ticker-track">
+        <% for (let r = 0; r < 2; r++) { (site.notifications || []).slice(0, 6).forEach(n => { %><a href="<%= n.href %>"<%- linkAttrs(n.href) %><%= r ? ' aria-hidden=true tabindex=-1' : '' %>><%= n.title %></a><span class="dot">•</span><% }) } %>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- QUICK LINKS -->
+  <section class="quick">
+    <div class="container quick-grid">
+      <% (site.quick || []).forEach(q => { %>
+        <a class="quick-card<%= q.hot ? ' hot' : '' %>" href="<%= q.href %>"<%- linkAttrs(q.href) %>>
+          <span class="quick-ico"><%- icon(q.icon || 'arrow') %></span>
+          <span><%= q.label %><% if (q.hot) { %><em class="new-badge">NEW</em><% } %></span>
+          <%- icon('arrow', 'go') %>
+        </a>
+      <% }) %>
+    </div>
+  </section>
+
+  <!-- AWARD -->
+  <section class="section">
+    <div class="container award reveal">
+      <div class="award-gallery" data-fader>
+        <% (site.awardImages || []).forEach((a, i) => { %><img src="<%= a.image %>" alt="NAAC A+ appreciation award photo <%= i+1 %>" class="<%= i === 0 ? 'active' : '' %>" loading="lazy"><% }) %>
+      </div>
+      <div class="award-text">
+        <span class="eyebrow">Recognition</span>
+        <h2><%= S.awardTitle %></h2>
+        <p><%= S.awardText %></p>
+        <a class="link-arrow" href="/about">Learn more about AIETM →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICE BOARD -->
+  <section class="section alt" id="notices">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Notice Board</span>
+        <h2>Exam results, notifications &amp; time tables</h2>
+        <p>Everything from the exam cell in one place. Switch tabs or search to find a document quickly.</p>
+      </div>
+      <div class="board reveal" data-board>
+        <div class="board-top">
+          <div class="board-tabs" role="tablist">
+            <button class="active" role="tab" aria-selected="true" data-tab="results">Exam Results <span><%= (site.results||[]).length %></span></button>
+            <button role="tab" aria-selected="false" data-tab="notifications">Academic Notifications <span><%= (site.notifications||[]).length %></span></button>
+            <button role="tab" aria-selected="false" data-tab="timetables">Exam TimeTables <span><%= (site.timetables||[]).length %></span></button>
+          </div>
+          <label class="board-search"><%- icon('search') %><input type="search" placeholder="Search e.g. R23, MBA, 2026…" aria-label="Search notices"></label>
+        </div>
+        <% ['results','notifications','timetables'].forEach((key, ti) => { %>
+          <ul class="board-list" data-list="<%= key %>"<%= ti ? ' hidden' : '' %>>
+            <% (site[key] || []).forEach(it => { const pdf = isFile(it.href); %>
+              <li><a href="<%= it.href %>"<%- linkAttrs(it.href) %>>
+                <span class="b-ico"><%- icon(pdf ? 'file' : 'arrow') %></span>
+                <span class="b-body"><% if (it.year) { %><span class="b-year"><%= it.year %></span><% } %><span class="b-title"><%= it.title %></span></span>
+                <% if (pdf) { %><span class="tag">PDF</span><% } %>
+              </a></li>
+            <% }) %>
+          </ul>
+        <% }) %>
+        <p class="board-empty" hidden>No matching notices.</p>
+        <div class="board-foot"><span data-count></span><a href="/exams">All examination notifications →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION & MISSION -->
+  <section class="section">
+    <div class="container vm-grid">
+      <div class="vm-vision reveal"><span class="eyebrow light">Our Vision</span><blockquote><%= S.vision %></blockquote></div>
+      <div class="vm-card reveal"><h3>Our Mission</h3><ol class="num-list"><% (site.mission||[]).forEach(m => { %><li><%= m.text %></li><% }) %></ol></div>
+      <div class="vm-card reveal"><h3>Objectives</h3><ol class="num-list"><% (site.objectives||[]).forEach(m => { %><li><%= m.text %></li><% }) %></ol></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Campus</span><h2>Salient features</h2></div>
+      <ul class="features reveal"><% (site.features||[]).forEach(f => { %><li><%- icon('check') %><span><%= f.text %></span></li><% }) %></ul>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head row reveal">
+        <div><span class="eyebrow">Programmes</span><h2>Courses offered</h2></div>
+        <a class="btn btn-outline" href="/courses">Intake &amp; seat details</a>
+      </div>
+      <div class="courses-grid">
+        <% (site.courses||[]).forEach(c => { %>
+          <article class="course-card reveal">
+            <span class="course-group"><%= c.group %></span>
+            <h3><%= c.program %></h3>
+            <div class="chips"><% String(c.branches||'').replace(/ & /g, ', ').split(/,\s*/).filter(Boolean).forEach(b => { %><span><%= b.replace(/\.$/, '') %></span><% }) %></div>
+          </article>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURAL -->
+  <section class="section dark">
+    <div class="container">
+      <div class="section-head row reveal">
+        <div><span class="eyebrow light">Life at Avanthi</span><h2>Cultural programs</h2></div>
+        <div class="carousel-btns">
+          <button class="icon-btn round" data-cult="-1" aria-label="Previous"><%- icon('left') %></button>
+          <button class="icon-btn round" data-cult="1" aria-label="Next"><%- icon('right') %></button>
+        </div>
+      </div>
+      <div class="cult-track" id="cultTrack">
+        <% (site.cultural||[]).forEach(c => { %><figure class="cult-card"><img src="<%= c.image %>" alt="<%= c.title %>" loading="lazy"><figcaption><%= c.title %></figcaption></figure><% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head row reveal">
+        <div><span class="eyebrow">What's happening</span><h2>Latest events</h2></div>
+        <a class="btn btn-outline" href="/photo_gallery">Photo gallery</a>
+      </div>
+      <div class="events-grid" id="eventsGrid">
+        <% (site.events||[]).forEach((e, i) => { %>
+          <a class="event-card reveal<%= i >= 8 ? ' is-hidden' : '' %>" href="<%= e.href %>"<%- linkAttrs(e.href) %>>
+            <div class="event-img"><img src="<%= e.image %>" alt="" loading="lazy"></div>
+            <div class="event-body"><h3><%= e.title %></h3><span class="more">View event <%- icon('arrow') %></span></div>
+          </a>
+        <% }) %>
+      </div>
+      <% if ((site.events||[]).length > 8) { %><div class="center"><button class="btn btn-primary" id="eventsMore">Show all <%= site.events.length %> events</button></div><% } %>
+    </div>
+  </section>
+
+  <!-- COLLEGE INFO -->
+  <section class="section alt">
+    <div class="container info-wrap reveal">
+      <div>
+        <span class="eyebrow">College Informations</span>
+        <h2>Admissions, payments &amp; student services</h2>
+        <p>Access the ECAP portal, pay fees online, raise a grievance or download the latest admission brochure.</p>
+      </div>
+      <div class="info-list">
+        <% (site.info||[]).forEach(l => { %><a class="info-link" href="<%= l.href %>"<%- linkAttrs(l.href) %>><span><%= l.label %></span><%- icon('arrow') %></a><% }) %>
+      </div>
+    </div>
+  </section>
+</main>
+
+<% if (S.popupEnabled && (site.popups||[]).length) { %>
+<div class="modal" id="popup" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-label="Announcements">
+    <button class="icon-btn modal-close" aria-label="Close"><%- icon('x') %></button>
+    <div class="popup-slides">
+      <% site.popups.forEach((p, i) => { %>
+        <% if (p.link) { %><a href="<%= p.link %>"<%- linkAttrs(p.link) %> class="popup-slide<%= i === 0 ? ' active' : '' %>"><img src="<%= p.image %>" alt="Announcement <%= i+1 %>"></a>
+        <% } else { %><div class="popup-slide<%= i === 0 ? ' active' : '' %>"><img src="<%= p.image %>" alt="Announcement <%= i+1 %>"></div><% } %>
+      <% }) %>
+    </div>
+    <% if (site.popups.length > 1) { %>
+      <button class="icon-btn popup-nav prev" aria-label="Previous"><%- icon('left') %></button>
+      <button class="icon-btn popup-nav next" aria-label="Next"><%- icon('right') %></button>
+    <% } %>
+  </div>
+</div>
+<% } %>
+
+<%- include('partials/footer') %>
