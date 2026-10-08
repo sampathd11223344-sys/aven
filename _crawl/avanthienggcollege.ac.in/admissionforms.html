@@ -1,0 +1,500 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avanthi Institute of Engineering & Technology - Admission Enquiry</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: drift 15s infinite;
+        }
+
+        @keyframes drift {
+            0% {
+                transform: translateY(0px) translateX(0px);
+            }
+            33% {
+                transform: translateY(-100px) translateX(100px);
+            }
+            66% {
+                transform: translateY(100px) translateX(-100px);
+            }
+            100% {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px 35px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .form-header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #5a67d8;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-out 0.3s both;
+        }
+
+        .form-header p {
+            color: #718096;
+            font-size: 16px;
+            animation: fadeInDown 1s ease-out 0.5s both;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        .form-group:nth-child(1) { animation-delay: 0.1s; }
+        .form-group:nth-child(2) { animation-delay: 0.2s; }
+        .form-group:nth-child(3) { animation-delay: 0.3s; }
+        .form-group:nth-child(4) { animation-delay: 0.4s; }
+        .form-group:nth-child(5) { animation-delay: 0.5s; }
+        .form-group:nth-child(6) { animation-delay: 0.6s; }
+        .form-group:nth-child(7) { animation-delay: 0.7s; }
+        .form-group:nth-child(8) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .form-label i {
+            margin-right: 10px;
+            color: #5a67d8;
+            font-size: 18px;
+        }
+
+        .form-control, .form-select {
+            border: 2px solid #e8e8f0;
+            border-radius: 12px;
+            padding: 12px 18px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background-color: #f8f9ff;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #5a67d8;
+            box-shadow: 0 0 0 4px rgba(90, 103, 216, 0.1);
+            background-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .form-control:hover, .form-select:hover {
+            border-color: #cbd5e0;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: block;
+            margin: 35px auto 0;
+            min-width: 200px;
+        }
+
+        .submit-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.7s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(118, 75, 162, 0.3);
+        }
+
+        .submit-btn:hover:before {
+            left: 100%;
+        }
+
+        .submit-btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* Decorative elements */
+        .decoration {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            opacity: 0.05;
+        }
+
+        .decoration-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            top: -100px;
+            right: -100px;
+        }
+
+        .decoration-2 {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            bottom: -100px;
+            left: -100px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            .form-header h2 {
+                font-size: 26px;
+            }
+            
+            .submit-btn {
+                width: 100%;
+            }
+        }
+
+        /* Success animation */
+        .success-checkmark {
+            display: none;
+            margin: 20px auto;
+            text-align: center;
+            animation: scaleIn 0.6s ease-in-out;
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .success-checkmark i {
+            color: #4caf50;
+            font-size: 60px;
+        }
+
+        /* Loading animation */
+        .loading {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .loading:after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #5a67d8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+  <!-- Animated particles background -->
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <div class="form-container">
+      <div class="decoration decoration-1"></div>
+      <div class="decoration decoration-2"></div>
+
+      <div class="form-header">
+        <h2>Avanthi Institute of Engineering & Technology Admission Enquiry</h2>
+        <p>Start your journey with Avanthi Institute of Engineering & Technology</p>
+      </div>
+
+      <form id="enquiryForm" method="post" action="https://avanthienggcollege.ac.in/main/enquiry_post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="fullname" class="form-label">
+                <i class="fas fa-user"></i> Full Name
+              </label>
+              <input type="text" name="fullnames" id="fullname" class="form-control" required placeholder="Enter your full name"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="dob" class="form-label">
+                <i class="fas fa-calendar-alt"></i> Date of Birth
+              </label>
+              <input type="date" name="birth" id="dob" class="form-control" required/>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address" class="form-label">
+            <i class="fas fa-map-marker-alt"></i> Address
+          </label>
+          <textarea name="addresss" id="address" rows="3" class="form-control" required placeholder="Enter your communication address"></textarea>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="contact" class="form-label">
+                <i class="fas fa-phone"></i> Contact Number
+              </label>
+              <input type="tel" name="contacts" id="contact" class="form-control" required placeholder="Enter your phone number"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email" class="form-label">
+                <i class="fas fa-envelope"></i> Email Address
+              </label>
+              <input type="email" name="emails" id="email" class="form-control" required placeholder="Enter your email address"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="course" class="form-label">
+                <i class="fas fa-graduation-cap"></i> Course Interested
+              </label>
+              <select name="courses" id="course" class="form-select form-control" required>
+                <option value="">Select Course</option>
+                <option value="B.Tech CSE">B.Tech – CSE</option>
+                <option value="B.Tech CSE DS">B.Tech – CSE (Data Science)</option>
+                <option value="B.Tech CSE AI&ML">B.Tech – CSE (Artificial Intelligence & Machine Learning)</option>
+                <option value="B.Tech ECE">B.Tech – ECE</option>
+                <option value="B.Tech EEE">B.Tech – EEE</option>
+                <option value="B.Tech Mechanical">B.Tech – Mechanical</option>
+                <option value="M.Tech CSE AI&ML">M.Tech – CSE (Artificial Intelligence & Machine Learning)</option>
+                <option value="M.Tech CSE">M.Tech – CSE</option>
+                <option value="M.Tech VLSI">M.Tech – VLSI</option>
+                <option value="M.Tech CAD/CAM">M.Tech – CAD/CAM Engineering</option>
+                <option value="M.Tech Power Electronics">M.Tech – Power Electronics</option>
+                <option value="M.Tech Power Systems">M.Tech – Power Systems</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="qualification" class="form-label">
+                <i class="fas fa-certificate"></i> Previous Qualifications
+              </label>
+              <input type="text" name="qualifications" id="qualification" class="form-control" required placeholder="e.g. Intermediate, Diploma, etc."/>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">
+            <i class="fas fa-comment-alt"></i> Message / Remarks
+          </label>
+          <textarea name="messages" id="messages" rows="4" class="form-control" placeholder="Any additional information you'd like to provide"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Submit Enquiry
+        </button>
+
+        <div class="loading" id="loading"></div>
+        <div class="success-checkmark" id="successCheckmark">
+          <i class="fas fa-check-circle"></i>
+          <p style="color: #4caf50; margin-top: 10px;">Your enquiry has been submitted successfully!</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script>
+    // Particle animation
+// Form submission with better error handling
+document.getElementById('enquiryForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const form = this;
+  const loading = document.getElementById('loading');
+  const successCheckmark = document.getElementById('successCheckmark');
+  const submitBtn = form.querySelector('.submit-btn');
+
+  loading.style.display = 'block';
+  submitBtn.disabled = true;
+  submitBtn.style.opacity = '0.6';
+
+  const formData = new FormData(form);
+
+  // Add any additional data if needed
+  // formData.append('csrf_token', 'your_csrf_token_here');
+
+  fetch('https://avanthienggcollege.ac.in/main/enquiry_post', {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest'
+    }
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    loading.style.display = 'none';
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = '1';
+
+    if (data.status === "success") {
+      successCheckmark.style.display = 'block';
+      form.reset();
+      
+      // Hide form on success
+      form.style.display = 'none';
+      
+      // Optional: Show success message for 5 seconds
+      setTimeout(() => {
+        successCheckmark.style.display = 'none';
+        form.style.display = 'block';
+      }, 5000);
+    } else {
+      alert('Error: ' + data.message);
+      console.error('Server error:', data);
+    }
+  })
+  .catch(error => {
+    loading.style.display = 'none';
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = '1';
+    alert("There was an error processing your request. Please try again.");
+    console.error('Error:', error);
+  });
+});
+
+
+</script>
+  
+  
+
+</body>
+</html>
