@@ -7,6 +7,7 @@ const compression = require("compression");
 const store = require("./lib/store");
 const auth = require("./lib/auth");
 const { ORIGIN } = require("./lib/html");
+const assets = require("./lib/assets");
 const { buildNavIndex, trailFor, sectionFor } = require("./lib/nav");
 
 const ROOT = path.join(__dirname, "..");
@@ -74,15 +75,27 @@ app.use("/static/vendor/jodit", express.static(path.join(ROOT, "node_modules/jod
 app.use("/static", express.static(path.join(ROOT, "public"), { maxAge: process.env.NODE_ENV === "production" ? "1d" : 0 }));
 
 /* /assets/* — serve locally uploaded / mirrored file if present, otherwise the original site's file */
+/* ---------------- shared locals ---------------- */
+app.use((req, res, next) => {
+  const s = site();
+  res.locals.site = s;
+  res.locals.S = s.settings || {};
+  res.locals.path = req.path;
+  res.locals.user = auth.current(req);
+  res.locals.visitors = stats().total;
+  res.locals.today = new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "2-digit", year: "numeric" });
+  res.locals.isExternal = (h) => /^https?:\/\//i.test(h || "") && !String(h).startsWith(ORIGIN);
+  res.locals.isFile = (h) => /\.(pdf|docx?|xlsx?|pptx?|jpe?g|png)(\?|$)/i.test(h || "");
+  res.locals.linkAttrs = (h) => (res.locals.isExternal(h) || res.locals.isFile(h) ? ' target="_blank" rel="noopener"' : "");
+  next();
+});
+
+/* Media and documents from the original site: local upload first, then the
+   cache, then proxied from the college site, then a friendly fallback. */
 app.get("/assets/*", (req, res) => {
   let rel;
   try { rel = decodeURIComponent(req.path.slice("/assets/".length)); } catch { return res.status(400).end(); }
-  const abs = path.join(ASSET_DIR, rel);
-  if (abs.startsWith(ASSET_DIR + path.sep) && fs.existsSync(abs) && fs.statSync(abs).isFile()) {
-    return res.sendFile(abs, { maxAge: "7d" });
-  }
-  const qs = req.originalUrl.includes("?") ? req.originalUrl.slice(req.originalUrl.indexOf("?")) : "";
-  res.redirect(302, ORIGIN + req.path + qs);
+  assets.serve(req, res, rel, ASSET_DIR, "assets/");
 });
 
 /* ---------------- visitor counter ---------------- */
@@ -98,21 +111,6 @@ function countVisit(req, res, key) {
   }
   store.save("stats", { backup: false });
 }
-
-/* ---------------- shared locals ---------------- */
-app.use((req, res, next) => {
-  const s = site();
-  res.locals.site = s;
-  res.locals.S = s.settings || {};
-  res.locals.path = req.path;
-  res.locals.user = auth.current(req);
-  res.locals.visitors = stats().total;
-  res.locals.today = new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "2-digit", year: "numeric" });
-  res.locals.isExternal = (h) => /^https?:\/\//i.test(h || "") && !String(h).startsWith(ORIGIN);
-  res.locals.isFile = (h) => /\.(pdf|docx?|xlsx?|pptx?|jpe?g|png)(\?|$)/i.test(h || "");
-  res.locals.linkAttrs = (h) => (res.locals.isExternal(h) || res.locals.isFile(h) ? ' target="_blank" rel="noopener"' : "");
-  next();
-});
 
 /* ---------------- public pages ---------------- */
 app.get(["/index.html", "/index.php", "/home"], (req, res) => res.redirect(301, "/"));
@@ -267,7 +265,11 @@ app.get("/*", (req, res, next) => {
 app.use((req, res) => {
   if (req.path.startsWith("/api/")) return res.status(404).json({ error: "Not found" });
   // documents linked outside /assets on the original site (e.g. /CurriculamAnalysis/…pdf)
-  if (/\.(pdf|docx?|xlsx?|pptx?|jpe?g|png|gif|webp|mp4|zip)$/i.test(req.path)) return res.redirect(302, ORIGIN + req.originalUrl);
+  if (/\.(pdf|docx?|xlsx?|pptx?|jpe?g|png|gif|webp|mp4|zip)$/i.test(req.path)) {
+    let rel = req.path.slice(1);
+    try { rel = decodeURIComponent(rel); } catch {}
+    return assets.serve(req, res, rel, null);
+  }
   res.status(404).render("404", { title: "Page not found" });
 });
 app.use((err, req, res, next) => {

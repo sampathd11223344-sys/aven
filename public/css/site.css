@@ -626,3 +626,7 @@ mark { background: #fff1c2; color: inherit; border-radius: 3px; }
   transition: opacity .2s, transform .2s;
 }
 .site-toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* "document not available" page */
+.missing-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.missing-actions .btn { text-decoration: none; }
