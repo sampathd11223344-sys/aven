@@ -16,3 +16,6 @@ data/stats.json
 
 # reference dumps used by the importer (never committed)
 _ref/
+
+# link-check output
+_linkcheck.json

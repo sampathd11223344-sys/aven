@@ -49,7 +49,7 @@ async function check(url) {
   const missing = new Set();
   for (const b of bads) {
     if (b.kind === "asset" && b.status === 404) missing.add(b.href.replace(/^\/assets\//, ""));
-    else if (b.kind === "page" && (b.status === 404 || b.status === 410 || b.status === 500)) missing.add(b.href.replace(/^\//, ""));
+    else if (b.kind === "page" && (b.status === 404 || b.status === 410)) missing.add(b.href.replace(/^\//, ""));
   }
   const list = [...missing].map((x) => { try { return decodeURI(x); } catch { return x; } }).sort();
   fs.writeFileSync("data/missing-assets.json", JSON.stringify({

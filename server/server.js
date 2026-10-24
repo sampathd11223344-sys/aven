@@ -115,7 +115,12 @@ function countVisit(req, res, key) {
 /* ---------------- public pages ---------------- */
 app.get(["/index.html", "/index.php", "/home"], (req, res) => res.redirect(301, "/"));
 // legacy static files from the first version of this repo
-for (const [from, to] of Object.entries({ "/about.html": "/about", "/courses.html": "/courses", "/gallery.html": "/photo_gallery", "/contact.html": "/contact_us", "/principal.html": "/principal" })) {
+for (const [from, to] of Object.entries({
+  // old static files from the first version of this repo
+  "/about.html": "/about", "/courses.html": "/courses", "/gallery.html": "/photo_gallery", "/contact.html": "/contact_us", "/principal.html": "/principal",
+  // pages the college has removed but still links to
+  "/civil": "/courses", "/StudentExperimentalLearning_2021": "/curriculam_enrichment",
+})) {
   app.get(from, (req, res) => res.redirect(301, to));
 }
 
@@ -268,6 +273,12 @@ app.use((req, res) => {
   if (/\.(pdf|docx?|xlsx?|pptx?|jpe?g|png|gif|webp|mp4|zip)$/i.test(req.path)) {
     let rel = req.path.slice(1);
     try { rel = decodeURIComponent(rel); } catch {}
+    return assets.serve(req, res, rel, null);
+  }
+  // pages / files the college site itself has removed
+  let rel = req.path.slice(1);
+  try { rel = decodeURIComponent(rel); } catch {}
+  if (rel && assets.isKnownMissing(rel)) {
     return assets.serve(req, res, rel, null);
   }
   res.status(404).render("404", { title: "Page not found" });

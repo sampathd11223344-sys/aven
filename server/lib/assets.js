@@ -113,4 +113,11 @@ function serve(req, res, rel, localDir, originPrefix) {
   return res.redirect(302, ORIGIN + "/" + prefix + encodePath(clean) + qs);
 }
 
-module.exports = { serve, reloadMissing, isImage, encodePath, MIME };
+/** Is this path known to be missing on the original site? */
+function isKnownMissing(rel) {
+  reloadMissing();
+  const clean = String(rel || "").replace(/^\/+/, "").toLowerCase();
+  return missing.has(clean);
+}
+
+module.exports = { serve, reloadMissing, isKnownMissing, isImage, encodePath, MIME };

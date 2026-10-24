@@ -5,7 +5,8 @@ The content and the URLs are the same as the original site. Only the UI/UX is ne
 
 - **All 907 pages of the original site** (departments, committees, events, R24 syllabus, exam cell, placements…) are served at **the same paths**, e.g. `/about`, `/cse`, `/iqac_committee?section=committee_members&year=2024-25`.
 - The **full menu** (24 sections, 265 links) is included. A navy bar shows the main sections with fly-out sub-menus, and the searchable **“All Menus”** overlay lists every link.
-- **Images, PDFs and videos** (`/assets/...`) are served from the original domain, unless a file has been uploaded locally through the admin panel.
+- **Images, PDFs and videos** (`/assets/...`): files uploaded through the admin panel are served locally; every other file redirects to the original college server, so media always shows the college's current version.
+- **Files the college site does not have** are handled instead of dead-ending: the app keeps a list in `data/missing-assets.json` (192 PDFs and photos that the original site returns 404 for) and shows a friendly page with a link back, plus a placeholder image for missing photos. Regenerate the list with `node scripts/check-links.js` (needs internet).
 - Old static-site URLs such as `/about.html` redirect to the new paths.
 - **Every control from the original site works the same way:** menus open on hover *and* on click, the notice board switches tabs, the gallery and event images open a lightbox, the original tabs on the M.Tech/B.Tech pages switch panes, the popup slider scrolls, the floating video plays/mutes/advances, and the **admission enquiry form** on `/admissionforms` (the only form on the original site) submits and lands in the admin inbox.
 - Placeholder links the college itself left empty (`href="#"`, e.g. balance sheets that were never uploaded) no longer jump to the top of the page — they show a short “not published yet” notice instead.
