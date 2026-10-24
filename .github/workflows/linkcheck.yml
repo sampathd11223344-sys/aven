@@ -16,7 +16,7 @@ jobs:
       - name: Commit
         run: |
           git config user.name "link-bot"; git config user.email "bot@local"
-          git add -f _linkcheck.json
+          git add -f _linkcheck.json data/missing-assets.json
           git commit -m "linkcheck results" || exit 0
           git pull --rebase origin arena/39451859-aven
           git push origin HEAD:arena/39451859-aven

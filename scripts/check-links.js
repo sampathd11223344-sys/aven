@@ -44,6 +44,20 @@ async function check(url) {
   };
   await Promise.all(Array.from({ length: 12 }, worker));
   const bads = results.filter((r) => r.bad);
+  // write the manifest of files the college site does not have, so the app can
+  // show a friendly page instead of a dead link
+  const missing = new Set();
+  for (const b of bads) {
+    if (b.kind === "asset" && b.status === 404) missing.add(b.href.replace(/^\/assets\//, ""));
+    else if (b.kind === "page" && (b.status === 404 || b.status === 410 || b.status === 500)) missing.add(b.href.replace(/^\//, ""));
+  }
+  const list = [...missing].map((x) => { try { return decodeURI(x); } catch { return x; } }).sort();
+  fs.writeFileSync("data/missing-assets.json", JSON.stringify({
+    note: "Files referenced by content that the college website returns 404/500 for. Served with a friendly message instead of a dead link. Regenerate with scripts/check-links.js.",
+    checked: new Date().toISOString().slice(0, 10),
+    count: list.length,
+    files: list,
+  }, null, 1));
   fs.writeFileSync("_linkcheck.json", JSON.stringify({ total: results.length, bad: bads.length, failures: bads }, null, 1));
   console.log("checked", results.length, "bad", bads.length);
   const by = {};
