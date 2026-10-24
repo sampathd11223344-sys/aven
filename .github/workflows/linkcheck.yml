@@ -1,0 +1,22 @@
+name: Check every link
+on:
+  workflow_dispatch:
+  push:
+    paths: [.github/workflows/linkcheck.yml]
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/check-links.js
+      - name: Commit
+        run: |
+          git config user.name "link-bot"; git config user.email "bot@local"
+          git add -f _linkcheck.json
+          git commit -m "linkcheck results" || exit 0
+          git pull --rebase origin arena/39451859-aven
+          git push origin HEAD:arena/39451859-aven
