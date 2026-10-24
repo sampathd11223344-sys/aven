@@ -27,6 +27,33 @@ Environment variables (all optional):
 | `ADMIN_PASSWORD` | – | Initial password for the `admin` user (otherwise `Avanthi@2026`, which must be changed on first login) |
 | `DATA_DIR` | `./data` | Where content, users, uploads and backups are stored |
 
+## Deploying
+
+### Vercel
+
+The repo ships a Vercel configuration, so a normal Git deployment works:
+
+- `vercel.json` rewrites every request to `api/index.js` (the Express app) and
+  bundles `views/`, `server/`, `data/` and `public/` with the function.
+- `api/index.js` exports the Express app; `server/server.js` only starts its own
+  listener when run directly (`npm start`).
+
+**One important limitation:** Vercel's filesystem is read-only and `/tmp` is
+per-instance and temporary. The public site is fully functional (all 907 pages,
+media, forms-in-a-session), but **admin edits are not persistent there** — they
+live only in that instance's `/tmp` and disappear when it recycles. Use Vercel
+for previews of the public site, and a host with a real disk for running the CMS:
+
+```bash
+# Render / Railway / Fly.io / any VPS
+npm install
+npm start                       # port 8080
+# optional: DATA_DIR=/var/lib/aiet-data  ADMIN_PASSWORD=...  SESSION_SECRET=...
+```
+
+Admin sessions are signed cookies, so logins survive restarts and work across
+several instances. Set `SESSION_SECRET` when running more than one instance.
+
 ## Admin panel – `/admin`
 
 The default login is **`admin` / `Avanthi@2026`**. The panel asks you to change this password the first time you sign in.

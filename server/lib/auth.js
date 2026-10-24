@@ -7,6 +7,9 @@ const COOKIE = "aiet_sid";
 const SESSION_TTL = 1000 * 60 * 60 * 8; // 8h
 const DEFAULT_PASSWORD = process.env.ADMIN_PASSWORD || "Avanthi@2026";
 
+/* Sessions are stateless signed tokens (so they survive serverless instances,
+   where each request may run in a fresh process) and are also tracked in memory
+   so a single long-running server can revoke them immediately. */
 const sessions = new Map(); // token -> { username, expires }
 const attempts = new Map(); // ip -> { n, until }
 
@@ -31,6 +34,36 @@ function findUser(username) {
 
 function publicUser(u) {
   return u && { username: u.username, name: u.name, role: u.role, mustChange: !!u.mustChange };
+}
+
+/** Stable signing key: env var, else derived from the user table (rotates when
+    a password changes, which invalidates old sessions). */
+function secretKey() {
+  if (process.env.SESSION_SECRET) return process.env.SESSION_SECRET;
+  const fp = users().list.map((u) => u.username + ":" + u.hash).join("|");
+  return crypto.createHash("sha256").update("aiet-session|" + fp).digest();
+}
+
+function signToken(payload) {
+  const body = Buffer.from(JSON.stringify(payload)).toString("base64url");
+  const mac = crypto.createHmac("sha256", secretKey()).update(body).digest("base64url");
+  return body + "." + mac;
+}
+
+function verifyToken(token) {
+  const [body, mac] = String(token || "").split(".");
+  if (!body || !mac) return null;
+  const expect = crypto.createHmac("sha256", secretKey()).update(body).digest("base64url");
+  const a = Buffer.from(mac);
+  const b = Buffer.from(expect);
+  if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return null;
+  try {
+    const p = JSON.parse(Buffer.from(body, "base64url").toString());
+    if (!p.u || !p.exp || p.exp < Date.now()) return null;
+    return p;
+  } catch {
+    return null;
+  }
 }
 
 function parseCookies(req) {
@@ -66,8 +99,9 @@ async function login(req, res) {
     return res.status(401).json({ error: "Invalid username or password." });
   }
   attempts.delete(ip);
-  const token = crypto.randomBytes(32).toString("hex");
-  sessions.set(token, { username: u.username, expires: Date.now() + SESSION_TTL });
+  const expires = Date.now() + SESSION_TTL;
+  const token = signToken({ u: u.username, exp: expires, j: crypto.randomBytes(6).toString("hex") });
+  sessions.set(token, { username: u.username, expires });
   u.lastLogin = new Date().toISOString();
   store.save("users", { backup: false });
   res.setHeader(
@@ -86,14 +120,21 @@ function logout(req, res) {
 
 function current(req) {
   const t = parseCookies(req)[COOKIE];
-  const s = t && sessions.get(t);
-  if (!s) return null;
-  if (s.expires < Date.now()) {
-    sessions.delete(t);
-    return null;
+  if (!t) return null;
+  // in-process session (may have been revoked by logout)
+  const s = sessions.get(t);
+  if (s) {
+    if (s.expires < Date.now()) {
+      sessions.delete(t);
+      return null;
+    }
+    s.expires = Date.now() + SESSION_TTL; // sliding
+    const u = findUser(s.username);
+    if (u) return u;
   }
-  s.expires = Date.now() + SESSION_TTL; // sliding
-  return findUser(s.username) || null;
+  // signed cookie from another instance / a previous process
+  const p = verifyToken(t);
+  return (p && findUser(p.u)) || null;
 }
 
 /** Require login. Also blocks cross-site writes (CSRF) by checking Origin on mutating requests. */

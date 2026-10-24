@@ -2,11 +2,43 @@
 const fs = require("fs");
 const path = require("path");
 
-const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, "..", "..", "data");
+const SEED_DIR = path.join(__dirname, "..", "..", "data");
+
+/** Can we write inside `dir`? (serverless platforms ship read-only code) */
+function isWritable(dir) {
+  try {
+    fs.mkdirSync(dir, { recursive: true });
+    const probe = path.join(dir, ".write-test");
+    fs.writeFileSync(probe, "1");
+    fs.unlinkSync(probe);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/** Read-only host (e.g. Vercel): copy the shipped content into a writable temp dir. */
+function writableDataDir() {
+  const tmp = path.join(require("os").tmpdir(), "aiet-data");
+  fs.mkdirSync(tmp, { recursive: true });
+  for (const f of fs.readdirSync(SEED_DIR)) {
+    if (!f.endsWith(".json")) continue;
+    const dst = path.join(tmp, f);
+    if (!fs.existsSync(dst)) {
+      try { fs.copyFileSync(path.join(SEED_DIR, f), dst); } catch {}
+    }
+  }
+  return tmp;
+}
+
+let DATA_DIR = process.env.DATA_DIR || SEED_DIR;
+if (!process.env.DATA_DIR && !isWritable(SEED_DIR)) DATA_DIR = writableDataDir();
+
 const BACKUP_DIR = path.join(DATA_DIR, "backups");
 const MAX_BACKUPS = 30;
 
-fs.mkdirSync(BACKUP_DIR, { recursive: true });
+try { fs.mkdirSync(BACKUP_DIR, { recursive: true }); } catch {}
+if (DATA_DIR !== SEED_DIR) console.log(`[store] read-only deployment: using ${DATA_DIR}`);
 
 const cache = {};
 const timers = {};

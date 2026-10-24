@@ -290,6 +290,13 @@ app.use((err, req, res, next) => {
 });
 
 auth.users(); // ensure default admin exists
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`AIETM website running on http://0.0.0.0:${PORT}  (admin: /admin)`);
-});
+
+// Listen only when started directly. On serverless hosts (Vercel) the app is
+// imported by api/index.js and the platform handles the HTTP server.
+if (require.main === module) {
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`AIETM website running on http://0.0.0.0:${PORT}  (admin: /admin)`);
+  });
+}
+
+module.exports = app;
