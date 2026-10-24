@@ -1,0 +1,6 @@
+# raw crawl / reference dumps and local tooling are not part of the deployment
+_crawl/
+_ref/
+node_modules/
+.npm/
+*.log

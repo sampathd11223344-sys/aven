@@ -1,0 +1,35 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumbs"><a href="/"><%- icon('home') %> Home</a><span>/</span><span>Search</span></nav>
+      <h1>Search the website</h1>
+      <form class="big-search" action="/search" role="search">
+        <%- icon('search') %><input type="search" name="q" value="<%= q %>" placeholder="Search pages, notifications, results, events…" autofocus>
+        <button class="btn btn-accent">Search</button>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container narrow">
+      <% if (q && q.length >= 2) { %>
+        <p class="muted"><%= results.length %> result<%= results.length === 1 ? '' : 's' %> for “<%= q %>”</p>
+        <ul class="search-results">
+          <% results.forEach(r => { %>
+            <li><a href="<%= r.href %>"<%- linkAttrs(r.href) %>>
+              <span class="sr-type"><%= r.type %></span>
+              <strong><%= r.title %></strong>
+              <% if (r.snippet) { %><p><%= r.snippet %></p><% } else if (r.text) { %><p><%= r.text %></p><% } %>
+              <small><%= r.href %></small>
+            </a></li>
+          <% }) %>
+        </ul>
+        <% if (!results.length) { %><p>No results. Try a different keyword, or browse <button class="link-arrow as-link" data-open-menu>All Menus</button>.</p><% } %>
+      <% } else { %>
+        <p class="muted">Type at least 2 characters.</p>
+      <% } %>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>

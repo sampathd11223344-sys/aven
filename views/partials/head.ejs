@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title && title !== S.seoTitle ? title + ' | ' + (S.shortName || 'AIETM') + ' – ' + S.name : (S.seoTitle || S.name) %></title>
+  <meta name="description" content="<%= typeof description !== 'undefined' ? description : S.seoDescription %>">
+  <meta property="og:title" content="<%= title || S.name %>">
+  <meta property="og:site_name" content="<%= S.name %>">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="<%= S.logo %>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>

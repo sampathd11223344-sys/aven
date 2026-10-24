@@ -1,0 +1,17 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main id="main">
+  <section class="section">
+    <div class="container narrow center-block">
+      <p class="big-404">404</p>
+      <h1>Page not found</h1>
+      <p class="muted">The page you are looking for doesn't exist or has been moved.</p>
+      <form class="big-search light" action="/search" role="search">
+        <%- icon('search') %><input type="search" name="q" placeholder="Search the website…">
+        <button class="btn btn-accent">Search</button>
+      </form>
+      <p><a class="btn btn-primary" href="/">Go to homepage</a> <button class="btn btn-outline" data-open-menu>Browse all menus</button></p>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>

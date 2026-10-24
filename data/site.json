@@ -1,0 +1,2961 @@
+{
+ "settings": {
+  "name": "Avanthi Institute of Engineering & Technology",
+  "shortName": "AIETM",
+  "tagline": "Top Engineering College Narsipatnam",
+  "logo": "/assets/images/logoo/logo2.png",
+  "naacLogo": "/assets/images/logoo/naac-logo.jpg",
+  "naacLink": "/assets/pdf/AIETM_NAAC_SSR.pdf",
+  "seoTitle": "Best Engineering College Narsipatnam | B. Tech College | Top MBA College",
+  "seoDescription": "Avanthi Institute of Engineering & Technology (AIETM), Narsipatnam – NAAC A+ accredited engineering college offering B.Tech, M.Tech, MBA, MCA and Polytechnic programmes.",
+  "address": "Tamaram, Makavarapalem, Narsipatnam(R.D), Visakapatnam Dist-531113 AP India",
+  "contactAddress": "Near Thagarapuvalasa, Vizianagaram District, Andhra Pradesh, 531162, India.",
+  "admissionPhone": "+91-9866664636",
+  "otherPhone": "+91-08933 226739",
+  "fax": "+91 08933 226739",
+  "email": "principal_aiet@yahoo.com",
+  "hours": "Monday to Saturday: 09:00 AM – 06:00 PM",
+  "hoursClosed": "Sunday: Closed & all official holidays",
+  "mapEmbed": "https://maps.google.com/maps?q=Avanthi%20Institute%20of%20Engineering%20and%20Technology%20Makavarapalem%20Narsipatnam&t=&z=14&ie=UTF8&iwloc=&output=embed",
+  "applyLink": "/admissionforms",
+  "brochureLink": "/assets/pdf/AIETM-ADMISSIONS%20BROUCHURE%20-%202025.pdf",
+  "footerCredit": "Copyright ©2022 All Rights Reserved · Designed & Developed by Sunraise Solutions",
+  "popupEnabled": true,
+  "videoEnabled": true,
+  "heroTitle": "Top Engineering College Narsipatnam",
+  "heroText": "To develop highly skilled professionals with ethics and human values — B.Tech, M.Tech, MBA, MCA & Polytechnic programmes on a NAAC A+ accredited campus.",
+  "awardTitle": "NAAC A+ Grade — honoured by APSCHE",
+  "awardText": "Dr. C Mohan Rao, Principal, AIETM has received honour and Appreciation award from Sri. Botcha Satyanarayana, Hon'ble Minister for Education, Govt. Of AP in a function organised by APSCHE at Vijayawada on 10th Oct 2023 for achieving NAAC A+ grade to our college.",
+  "vision": "To develop highly skilled professionals with ethics and human values"
+ },
+ "topLinks": [
+  {
+   "label": "Online Fee Payment",
+   "href": "https://easypay.axisbank.co.in/easyPay/makePayment?mid=NDY4ODY%3D"
+  },
+  {
+   "label": "Alumni",
+   "href": "/alumni"
+  },
+  {
+   "label": "Electoral Literacy Club (ELC)",
+   "href": "/electoral"
+  },
+  {
+   "label": "MOU",
+   "href": "/mou"
+  },
+  {
+   "label": "IQAC",
+   "href": "/iqac"
+  },
+  {
+   "label": "Admission Enquiry",
+   "href": "/admissionforms"
+  },
+  {
+   "label": "Grievance",
+   "href": "https://forms.gle/J7Sa9tUyxgmvaBfx9"
+  },
+  {
+   "label": "Contact us",
+   "href": "/contact_us"
+  }
+ ],
+ "nav": [
+  {
+   "id": "n1",
+   "label": "Home",
+   "href": "/",
+   "children": [],
+   "featured": true
+  },
+  {
+   "id": "n9",
+   "label": "About",
+   "href": "#",
+   "children": [
+    {
+     "id": "n2",
+     "label": "ABOUT THE COLLEGE",
+     "href": "/about",
+     "children": []
+    },
+    {
+     "id": "n3",
+     "label": "FROM FOUNDER'S DESK",
+     "href": "/founder",
+     "children": []
+    },
+    {
+     "id": "n4",
+     "label": "FROM PRINCIPAL'S DESK",
+     "href": "/principal",
+     "children": []
+    },
+    {
+     "id": "n5",
+     "label": "GOVERNING BODY",
+     "href": "/assets/pdf/goverrning3.pdf",
+     "children": []
+    },
+    {
+     "id": "n6",
+     "label": "HR POLICIES",
+     "href": "/assets/pdf/hrpolicies.pdf",
+     "children": []
+    },
+    {
+     "id": "n7",
+     "label": "ORGANIZATION CHART",
+     "href": "/org",
+     "children": []
+    },
+    {
+     "id": "n8",
+     "label": "RTI STATUTORY DECLARATION",
+     "href": "/assets/pdf/aietm-rti%20declaration-2022.pdf",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n1s",
+   "label": "Governance & Leadership",
+   "href": "#",
+   "children": [
+    {
+     "id": "na",
+     "label": "GOVERNANCE & LEADERSHIP",
+     "href": "/grevience_leadership",
+     "children": []
+    },
+    {
+     "id": "nk",
+     "label": "Statutory committes",
+     "href": "#",
+     "children": [
+      {
+       "id": "nb",
+       "label": "Academic Council",
+       "href": "/assets/pdf/a/A%20C%20COUNCIL.pdf",
+       "children": []
+      },
+      {
+       "id": "nc",
+       "label": "Finance Commitee",
+       "href": "/assets/pdf/a/FINANCE%20COMMITTEE-1.pdf",
+       "children": []
+      },
+      {
+       "id": "nj",
+       "label": "Board of Studies",
+       "href": "#",
+       "children": [
+        {
+         "id": "nd",
+         "label": "CSE,CSM & CSD",
+         "href": "/assets/pdf/a/CSE%20CSM%20CSD.pdf",
+         "children": []
+        },
+        {
+         "id": "ne",
+         "label": "ECE",
+         "href": "/assets/pdf/a/ECE.pdf",
+         "children": []
+        },
+        {
+         "id": "nf",
+         "label": "EEE",
+         "href": "/assets/pdf/a/EEE.pdf",
+         "children": []
+        },
+        {
+         "id": "ng",
+         "label": "MECH",
+         "href": "/assets/pdf/a/MECHANICAL.pdf",
+         "children": []
+        },
+        {
+         "id": "nh",
+         "label": "MBA",
+         "href": "/assets/pdf/a/MBA.pdf",
+         "children": []
+        },
+        {
+         "id": "ni",
+         "label": "MCA",
+         "href": "/assets/pdf/a/MCA.pdf",
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "nl",
+     "label": "Strategic/Inst development plan",
+     "href": "/assets/a/AIETM-Strategic%20Planning-2025.pdf",
+     "children": []
+    },
+    {
+     "id": "nm",
+     "label": "COMMITTE",
+     "href": "/commeitte",
+     "children": []
+    },
+    {
+     "id": "no",
+     "label": "RED CROSS",
+     "href": "#",
+     "children": [
+      {
+       "id": "nn",
+       "label": "INAUGURATION 2025",
+       "href": "/inauguration",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n17",
+     "label": "NSS",
+     "href": "/nss",
+     "children": [
+      {
+       "id": "np",
+       "label": "GENDER EQUALITY",
+       "href": "/gender-equality",
+       "children": []
+      },
+      {
+       "id": "nq",
+       "label": "ENERGY CONSERVATION",
+       "href": "/energy",
+       "children": []
+      },
+      {
+       "id": "nr",
+       "label": "WASTE MANAGEMENT",
+       "href": "/waste",
+       "children": []
+      },
+      {
+       "id": "ns",
+       "label": "WATER CONSERVATION FACILITIES",
+       "href": "/water",
+       "children": []
+      },
+      {
+       "id": "nt",
+       "label": "GREEN CAMPUS",
+       "href": "/greencampus",
+       "children": []
+      },
+      {
+       "id": "nu",
+       "label": "AUDITS ON ENVIREMENT",
+       "href": "/audit",
+       "children": []
+      },
+      {
+       "id": "nv",
+       "label": "DISABLED FRIENDLY",
+       "href": "/disabled",
+       "children": []
+      },
+      {
+       "id": "nw",
+       "label": "INSTITUTIONAL EFFORTS/INITIATIVES",
+       "href": "/institutional",
+       "children": []
+      },
+      {
+       "id": "nx",
+       "label": "SENSITIZATION",
+       "href": "/sensitization",
+       "children": []
+      },
+      {
+       "id": "ny",
+       "label": "CODE OF CONDUCT",
+       "href": "/codeofconduct",
+       "children": []
+      },
+      {
+       "id": "nz",
+       "label": "BEST PRACTICES",
+       "href": "/best_practices",
+       "children": []
+      },
+      {
+       "id": "n10",
+       "label": "INSTITUTIONAL DISTINCTIVENESS",
+       "href": "/institutional_distinctiveness",
+       "children": []
+      },
+      {
+       "id": "n11",
+       "label": "EXTENSION ACTIVITIES",
+       "href": "/ExtensionActivities",
+       "children": []
+      },
+      {
+       "id": "n12",
+       "label": "INSTITUTIONAL VALUES",
+       "href": "/institutional_values",
+       "children": []
+      },
+      {
+       "id": "n13",
+       "label": "VALUE, RIGHTS AND DUTIES",
+       "href": "/value_rights_duties",
+       "children": []
+      },
+      {
+       "id": "n14",
+       "label": "MEASURES INITIATED BY THE INSTITUION",
+       "href": "/measures_institution",
+       "children": []
+      },
+      {
+       "id": "n15",
+       "label": "QUALITY AUDITS ON ENERGY AND GREEN",
+       "href": "/quality_audits_on_energy_green",
+       "children": []
+      },
+      {
+       "id": "n16",
+       "label": "BEST PRACTICES",
+       "href": "/bestpractices",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n18",
+     "label": "NCC",
+     "href": "/ncc",
+     "children": []
+    },
+    {
+     "id": "n19",
+     "label": "FDP & TP ORGANIZED",
+     "href": "/pdp_organized",
+     "children": []
+    },
+    {
+     "id": "n1a",
+     "label": "INSTITUTIONAL VISION AND LEADERSHIP",
+     "href": "/institutionalleadership",
+     "children": []
+    },
+    {
+     "id": "n1d",
+     "label": "STRATEGY DEVELOPMENT & DEPLOYMENT",
+     "href": "#",
+     "children": [
+      {
+       "id": "n1b",
+       "label": "FUNCTION OF INSTITUTION BODIES",
+       "href": "/function",
+       "children": []
+      },
+      {
+       "id": "n1c",
+       "label": "E-GOVERNANCE",
+       "href": "/ecap",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n1j",
+     "label": "FDP & TRAINING PROGRAM",
+     "href": "#",
+     "children": [
+      {
+       "id": "n1e",
+       "label": "2023-24 TEACHING",
+       "href": "/t6",
+       "children": []
+      },
+      {
+       "id": "n1f",
+       "label": "2021-22 TEACHING",
+       "href": "/t1",
+       "children": []
+      },
+      {
+       "id": "n1g",
+       "label": "2020-21 TEACHING",
+       "href": "/t2",
+       "children": []
+      },
+      {
+       "id": "n1h",
+       "label": "2021-22 NON-TEACHING",
+       "href": "/nt1",
+       "children": []
+      },
+      {
+       "id": "n1i",
+       "label": "2020-21 NON-TEACHING",
+       "href": "/nt2",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n1q",
+     "label": "FINANCIAL SUPPORT",
+     "href": "#",
+     "children": [
+      {
+       "id": "n1k",
+       "label": "FINANCIAL SUPPORT 2023-2024",
+       "href": "/financialsupport_2023_24",
+       "children": []
+      },
+      {
+       "id": "n1l",
+       "label": "FINANCIAL SUPPORT 2021-2022",
+       "href": "/financialsupport_2021_22",
+       "children": []
+      },
+      {
+       "id": "n1m",
+       "label": "FINANCIAL SUPPORT 2020-2021",
+       "href": "/financialsupport_2020_21",
+       "children": []
+      },
+      {
+       "id": "n1n",
+       "label": "FINANCIAL SUPPORT 2019-2020",
+       "href": "/financialsupport_2019_20",
+       "children": []
+      },
+      {
+       "id": "n1o",
+       "label": "FINANCIAL SUPPORT 2018-2019",
+       "href": "/financialsupport_2018_19",
+       "children": []
+      },
+      {
+       "id": "n1p",
+       "label": "FINANCIAL SUPPORT 2017-2018",
+       "href": "/financialsupport_2017_18",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n1r",
+     "label": "FACULTY APPRAISAL",
+     "href": "/faculty_appraisal",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n2c",
+   "label": "Academics",
+   "href": "#",
+   "children": [
+    {
+     "id": "n1u",
+     "label": "Curriculam Framework",
+     "href": "#",
+     "children": [
+      {
+       "id": "n1t",
+       "label": "Structure,Credit distribution,learning outcomes",
+       "href": "/assets/pdf/a/credit%20distribution.pdf",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n1v",
+     "label": "Industry Integrated Courses",
+     "href": "/assets/pdf/a/industry%20integrated%20courses.pdf",
+     "children": []
+    },
+    {
+     "id": "n1x",
+     "label": "Pedagogy and Learning Methodologies",
+     "href": "#",
+     "children": [
+      {
+       "id": "n1w",
+       "label": "ICT Intergration",
+       "href": "/ictf_facilities",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n2b",
+     "label": "DEPARTMENT",
+     "href": "#",
+     "children": [
+      {
+       "id": "n1y",
+       "label": "COURSES OFFERED",
+       "href": "/courses",
+       "children": []
+      },
+      {
+       "id": "n1z",
+       "label": "ECE",
+       "href": "/ece",
+       "children": []
+      },
+      {
+       "id": "n20",
+       "label": "EEE",
+       "href": "/eee",
+       "children": []
+      },
+      {
+       "id": "n21",
+       "label": "CSE",
+       "href": "/cse",
+       "children": []
+      },
+      {
+       "id": "n22",
+       "label": "CSM(AI & ML)",
+       "href": "/csm",
+       "children": []
+      },
+      {
+       "id": "n23",
+       "label": "MECH",
+       "href": "/mech",
+       "children": []
+      },
+      {
+       "id": "n24",
+       "label": "MBA",
+       "href": "/mba",
+       "children": []
+      },
+      {
+       "id": "n25",
+       "label": "BS & H",
+       "href": "/bsh",
+       "children": []
+      },
+      {
+       "id": "n26",
+       "label": "M.TECH(VLSI)",
+       "href": "/mtechvls",
+       "children": []
+      },
+      {
+       "id": "n27",
+       "label": "M.TECH(CSE)",
+       "href": "/mtechcse",
+       "children": []
+      },
+      {
+       "id": "n28",
+       "label": "M.TECH(PE)",
+       "href": "/mtechpe",
+       "children": []
+      },
+      {
+       "id": "n29",
+       "label": "M.TECH(DEC)",
+       "href": "/mtechdec",
+       "children": []
+      },
+      {
+       "id": "n2a",
+       "label": "CIVIL",
+       "href": "https://avanthienggcollege.ac.in/civil",
+       "children": []
+      }
+     ]
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n2k",
+   "label": "Faculty",
+   "href": "#",
+   "children": [
+    {
+     "id": "n2e",
+     "label": "Recruitment Policy and Process",
+     "href": "#",
+     "children": [
+      {
+       "id": "n2d",
+       "label": "Transparent and merit-based",
+       "href": "/assets/pdf/hrpolicies.pdf",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n2f",
+     "label": "FACULTIES LIST",
+     "href": "/faculties_list",
+     "children": []
+    },
+    {
+     "id": "n2j",
+     "label": "Faculty Achievements",
+     "href": "#",
+     "children": [
+      {
+       "id": "n2i",
+       "label": "Awards, Fellowships & Professional Memberships",
+       "href": "#",
+       "children": [
+        {
+         "id": "n2g",
+         "label": "2024–2025",
+         "href": "/assets/a/202425.pdf",
+         "children": []
+        },
+        {
+         "id": "n2h",
+         "label": "2022–2023",
+         "href": "/assets/pdf/Untitled%20spreadsheet%20-%20Sheet1%20(2).pdf",
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n2o",
+   "label": "Research",
+   "href": "#",
+   "children": [
+    {
+     "id": "n2l",
+     "label": "CONFERENCES/BOOK & CHAPTERS",
+     "href": "/conferences",
+     "children": []
+    },
+    {
+     "id": "n2m",
+     "label": "LINKAGES/COLLABORATIONS",
+     "href": "/linkages",
+     "children": []
+    },
+    {
+     "id": "n2n",
+     "label": "INCUBATION",
+     "href": "/incubation",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n2t",
+   "label": "Admissions",
+   "href": "#",
+   "children": [
+    {
+     "id": "n2q",
+     "label": "Mentoring and Counseling",
+     "href": "#",
+     "children": [
+      {
+       "id": "n2p",
+       "label": "Academic and personal mentoring structure",
+       "href": "/alumni",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n2s",
+     "label": "Alumni Network",
+     "href": "#",
+     "children": [
+      {
+       "id": "n2r",
+       "label": "Activities, Achievements, database",
+       "href": "/alumni",
+       "children": []
+      }
+     ]
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n2w",
+   "label": "Linkages",
+   "href": "#",
+   "children": [
+    {
+     "id": "n2v",
+     "label": "Internship / Apprenticeship Oppurtunitie",
+     "href": "#",
+     "children": [
+      {
+       "id": "n2u",
+       "label": "MoUs,Collaborations and Partner list",
+       "href": "/mou",
+       "children": []
+      }
+     ]
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n39",
+   "label": "Infrastracture",
+   "href": "/infrastracture",
+   "children": [
+    {
+     "id": "n2x",
+     "label": "FACILITIES",
+     "href": "/infrastracture",
+     "children": []
+    },
+    {
+     "id": "n2y",
+     "label": "PHYSICAL FACILITIES",
+     "href": "/physical_facilities",
+     "children": []
+    },
+    {
+     "id": "n2z",
+     "label": "GENERAL FACILITIES",
+     "href": "/general_facilities",
+     "children": []
+    },
+    {
+     "id": "n30",
+     "label": "ICT FACILITIES",
+     "href": "/ictf_facilities",
+     "children": []
+    },
+    {
+     "id": "n37",
+     "label": "LIBRARY FACILITIES",
+     "href": "/library_facilities",
+     "children": [
+      {
+       "id": "n31",
+       "label": "ABOUT LIBRARY",
+       "href": "/about_library",
+       "children": []
+      },
+      {
+       "id": "n32",
+       "label": "SOUL 2.0",
+       "href": "/soul",
+       "children": []
+      },
+      {
+       "id": "n33",
+       "label": "DIGITAL LIBRARY",
+       "href": "/digital_library",
+       "children": []
+      },
+      {
+       "id": "n34",
+       "label": "ONLINE E-JOURNALS",
+       "href": "/online_ejournals",
+       "children": []
+      },
+      {
+       "id": "n35",
+       "label": "PHOTO GALLERY",
+       "href": "/photo_gallery",
+       "children": []
+      },
+      {
+       "id": "n36",
+       "label": "SSR",
+       "href": "/assets/pdf/SSR.pdf",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n38",
+     "label": "IT FACILITIES",
+     "href": "/itf_facilities",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n3b",
+   "label": "Mandatory Disclosure",
+   "href": "#",
+   "children": [
+    {
+     "id": "n3a",
+     "label": "Mandatory Disclosure",
+     "href": "/assets/pdf/30-MANDATORY%20DISCLOSURE.pdf",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n3f",
+   "label": "Directions",
+   "href": "#",
+   "children": [
+    {
+     "id": "n3c",
+     "label": "Academic, Research, Societal Impact Metrics",
+     "href": "/assets/pdf/a/ASSESSMENT%20of%20ARS.pdf",
+     "children": []
+    },
+    {
+     "id": "n3d",
+     "label": "Mechanisms for continuous feedback",
+     "href": "/assets/pdf/a/AIETM-Mechanisms%20for%20continuous%20feedback.pdf",
+     "children": []
+    },
+    {
+     "id": "n3e",
+     "label": "Alignment with national development goals",
+     "href": "/assets/pdf/a/Aietm%20%E2%80%93%20Vision%20For%20Viksit%20Bharat%202047.pdf",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n3t",
+   "label": "Facilities",
+   "href": "#",
+   "children": [
+    {
+     "id": "n3g",
+     "label": "GENDER EQUALITY",
+     "href": "/gender-equality",
+     "children": []
+    },
+    {
+     "id": "n3h",
+     "label": "ENERGY CONSERVATION",
+     "href": "/energy",
+     "children": []
+    },
+    {
+     "id": "n3i",
+     "label": "WASTE MANAGEMENT",
+     "href": "/waste",
+     "children": []
+    },
+    {
+     "id": "n3j",
+     "label": "WATER CONSERVATION FACILITIES",
+     "href": "/water",
+     "children": []
+    },
+    {
+     "id": "n3k",
+     "label": "GREEN CAMPUS",
+     "href": "/greencampus",
+     "children": []
+    },
+    {
+     "id": "n3l",
+     "label": "AUDITS ON ENVIREMENT",
+     "href": "/audit",
+     "children": []
+    },
+    {
+     "id": "n3m",
+     "label": "DISABLED FRIENDLY",
+     "href": "/disabled",
+     "children": []
+    },
+    {
+     "id": "n3n",
+     "label": "INSTITUTIONAL EFFORTS/INITIATIVES",
+     "href": "/institutional",
+     "children": []
+    },
+    {
+     "id": "n3o",
+     "label": "SENSITIZATION",
+     "href": "/sensitization",
+     "children": []
+    },
+    {
+     "id": "n3p",
+     "label": "CODE OF CONDUCT",
+     "href": "/codeofconduct",
+     "children": []
+    },
+    {
+     "id": "n3q",
+     "label": "BEST PRACTICES",
+     "href": "/best_practices",
+     "children": []
+    },
+    {
+     "id": "n3r",
+     "label": "INSTITUTIONAL DISTINCTIVENESS",
+     "href": "/institutional_distinctiveness",
+     "children": []
+    },
+    {
+     "id": "n3s",
+     "label": "WELFARE MESASURES",
+     "href": "/welfare",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n47",
+   "label": "LMS",
+   "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+   "children": [
+    {
+     "id": "n3u",
+     "label": "ECE",
+     "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+     "children": []
+    },
+    {
+     "id": "n3v",
+     "label": "EEE",
+     "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+     "children": []
+    },
+    {
+     "id": "n3w",
+     "label": "CSE",
+     "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+     "children": []
+    },
+    {
+     "id": "n3x",
+     "label": "MECH",
+     "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+     "children": []
+    },
+    {
+     "id": "n3y",
+     "label": "MBA",
+     "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+     "children": []
+    },
+    {
+     "id": "n3z",
+     "label": "H & BS",
+     "href": "https://classroom.google.com/u/0/c/NDQyOTE3NDM4MTg0?cjc=jm4vkjx",
+     "children": []
+    },
+    {
+     "id": "n40",
+     "label": "CSE DEPARTMENT",
+     "href": "/cse_department",
+     "children": []
+    },
+    {
+     "id": "n41",
+     "label": "ECE DEPARTMENT",
+     "href": "/ece_department",
+     "children": []
+    },
+    {
+     "id": "n42",
+     "label": "EEE DEPARTMENT",
+     "href": "/eee_department",
+     "children": []
+    },
+    {
+     "id": "n43",
+     "label": "MECH DEPARTMENT",
+     "href": "/mech_department",
+     "children": []
+    },
+    {
+     "id": "n44",
+     "label": "MBA DEPARTMENT",
+     "href": "/mba_department",
+     "children": []
+    },
+    {
+     "id": "n45",
+     "label": "CSM DEPARTMENT",
+     "href": "/csm_department",
+     "children": []
+    },
+    {
+     "id": "n46",
+     "label": "H & BS DEPARTMENT",
+     "href": "/h_bs_department",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n4e",
+   "label": "Training & Placement Cell",
+   "href": "#",
+   "children": [
+    {
+     "id": "n48",
+     "label": "COMPANIES VISITED",
+     "href": "/companies",
+     "children": []
+    },
+    {
+     "id": "n49",
+     "label": "PLACEMENTS & HIGHER STUDIES",
+     "href": "/placements",
+     "children": []
+    },
+    {
+     "id": "n4a",
+     "label": "ADMITTED IN PG COURSES",
+     "href": "/pg-courses",
+     "children": []
+    },
+    {
+     "id": "n4b",
+     "label": "QUALIFIED IN ENTRANCE EXAM",
+     "href": "/qualified",
+     "children": []
+    },
+    {
+     "id": "n4c",
+     "label": "CAREER GUIDENCE AND TRAINING",
+     "href": "/career-guidence",
+     "children": []
+    },
+    {
+     "id": "n4d",
+     "label": "CAPACITY BUILDING AND SKILL ENHANCEMENT INITIATIVES",
+     "href": "/capacity_building",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n4m",
+   "label": "Curriculam Aspects",
+   "href": "#",
+   "children": [
+    {
+     "id": "n4f",
+     "label": "CURRICULAM PLANNING AND IMPLIMENTATION",
+     "href": "/curriculam_planing",
+     "children": []
+    },
+    {
+     "id": "n4g",
+     "label": "ACEDEMIC FLEXIBILITY",
+     "href": "/academic_flixbility",
+     "children": []
+    },
+    {
+     "id": "n4h",
+     "label": "CURRICULAM ANALYSIS",
+     "href": "/curriculumanalysis",
+     "children": []
+    },
+    {
+     "id": "n4i",
+     "label": "CURRICULAM ENRICHMENT",
+     "href": "/curriculam_enrichment",
+     "children": []
+    },
+    {
+     "id": "n4j",
+     "label": "ACEDEMIC REGULATION",
+     "href": "/academic_regulation",
+     "children": []
+    },
+    {
+     "id": "n4k",
+     "label": "FEEDBACK SYSTEM",
+     "href": "/feedback_system",
+     "children": []
+    },
+    {
+     "id": "n4l",
+     "label": "COURSE OUTCOMES",
+     "href": "/course_outcomes",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n4o",
+   "label": "Co-Curricular",
+   "href": "#",
+   "children": [
+    {
+     "id": "n4n",
+     "label": "INDUSTRIAL VISITS",
+     "href": "/industrial_visits",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n4v",
+   "label": "Students",
+   "href": "#",
+   "children": [
+    {
+     "id": "n4p",
+     "label": "STUDENT GRIEVANCE CELL/ANTI-SEXUAL HARASSMENT CELL/ANTI-RAGGING CELL",
+     "href": "/anti_sexual_harasssment",
+     "children": []
+    },
+    {
+     "id": "n4q",
+     "label": "SCHOLARSHIP",
+     "href": "/scholarship",
+     "children": []
+    },
+    {
+     "id": "n4r",
+     "label": "FINAL YEAR RESULTS",
+     "href": "/results",
+     "children": []
+    },
+    {
+     "id": "n4s",
+     "label": "STUDENTS CENTRIC METHODS",
+     "href": "/Students_Centric_Methods",
+     "children": []
+    },
+    {
+     "id": "n4t",
+     "label": "STUDENTS ON ROLL",
+     "href": "/students_on_role",
+     "children": []
+    },
+    {
+     "id": "n4u",
+     "label": "AICTE APPROVED LIST",
+     "href": "/aicte_apporvedlist",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n4z",
+   "label": "Events",
+   "href": "#",
+   "children": [
+    {
+     "id": "n4w",
+     "label": "SPORTS",
+     "href": "/sports",
+     "children": []
+    },
+    {
+     "id": "n4x",
+     "label": "NSS",
+     "href": "/nss",
+     "children": []
+    },
+    {
+     "id": "n4y",
+     "label": "NCC",
+     "href": "/ncc",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n52",
+   "label": "Sports & Cultural",
+   "href": "#",
+   "children": [
+    {
+     "id": "n50",
+     "label": "INTRA MURAL",
+     "href": "/intra",
+     "children": []
+    },
+    {
+     "id": "n51",
+     "label": "EXTRA MURAL",
+     "href": "/extra",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n6v",
+   "label": "R24 Regulation & Syllabus",
+   "href": "#",
+   "children": [
+    {
+     "id": "n53",
+     "label": "Dean Of Academics",
+     "href": "/deanofacademics",
+     "children": []
+    },
+    {
+     "id": "n5y",
+     "label": "B.Tech",
+     "href": "#",
+     "children": [
+      {
+       "id": "n58",
+       "label": "CSE",
+       "href": "#",
+       "children": [
+        {
+         "id": "n54",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/1%20DOS.CSE.pdf",
+         "children": []
+        },
+        {
+         "id": "n55",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20CSE.pdf",
+         "children": []
+        },
+        {
+         "id": "n56",
+         "label": "3rd BOS",
+         "href": "/assets/a/CSE_3RD_BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n57",
+         "label": "Syllabus",
+         "href": "/assets/a/AIET%20R24%20CSE%20I-II-III-IV%20YEAR%20SYLLBUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n5d",
+       "label": "CSM",
+       "href": "#",
+       "children": [
+        {
+         "id": "n59",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/1%20DOS.CSE.pdf",
+         "children": []
+        },
+        {
+         "id": "n5a",
+         "label": "2nd BOS",
+         "href": "/assets/pdf/meeting/AC%20FINAL-87-103.pdf",
+         "children": []
+        },
+        {
+         "id": "n5b",
+         "label": "3rd BOS",
+         "href": "/assets/a/CSM_3RD_BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n5c",
+         "label": "Syllabus",
+         "href": "/assets/a/AIET%20R24%20CSE%20I-II-III-IV%20YEAR%20SYLLBUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n5i",
+       "label": "CSD",
+       "href": "#",
+       "children": [
+        {
+         "id": "n5e",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/1%20DOS.CSE.pdf",
+         "children": []
+        },
+        {
+         "id": "n5f",
+         "label": "2nd BOS",
+         "href": "/assets/pdf/meeting/AC%20FINAL-87-103.pdf",
+         "children": []
+        },
+        {
+         "id": "n5g",
+         "label": "3rd BOS",
+         "href": "/assets/a/CSD_3RD_BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n5h",
+         "label": "Syllabus",
+         "href": "/assets/a/AIET%20R24%20CSE%20I-II-III-IV%20YEAR%20SYLLBUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n5n",
+       "label": "ECE",
+       "href": "#",
+       "children": [
+        {
+         "id": "n5j",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/First%20bos%20ece.pdf",
+         "children": []
+        },
+        {
+         "id": "n5k",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20ECE.pdf",
+         "children": []
+        },
+        {
+         "id": "n5l",
+         "label": "3rd BOS",
+         "href": "/assets/a/ECE_3RD_BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n5m",
+         "label": "Syllabus",
+         "href": "/assets/a/R24_ECE_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n5s",
+       "label": "EEE",
+       "href": "#",
+       "children": [
+        {
+         "id": "n5o",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/first%20bos%20eee.pdf",
+         "children": []
+        },
+        {
+         "id": "n5p",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20EEE.pdf",
+         "children": []
+        },
+        {
+         "id": "n5q",
+         "label": "3rd BOS",
+         "href": "/assets/a/EEE_3RD_BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n5r",
+         "label": "Syllabus",
+         "href": "/assets/a/R24_EEE_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n5x",
+       "label": "Mech",
+       "href": "#",
+       "children": [
+        {
+         "id": "n5t",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/1st-BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n5u",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20MEC.pdf",
+         "children": []
+        },
+        {
+         "id": "n5v",
+         "label": "3rd BOS",
+         "href": "/assets/a/MECH_3RD_BOS.pdf",
+         "children": []
+        },
+        {
+         "id": "n5w",
+         "label": "Syllabus",
+         "href": "/assets/a/R24_MECH_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "n62",
+     "label": "MCA",
+     "href": "#",
+     "children": [
+      {
+       "id": "n5z",
+       "label": "1st BOS",
+       "href": "/assets/pdf/meeting/1%20BOS.MCA.pdf",
+       "children": []
+      },
+      {
+       "id": "n60",
+       "label": "2nd BOS",
+       "href": "/assets/a/2ND%20BOS%20MCA.pdf",
+       "children": []
+      },
+      {
+       "id": "n61",
+       "label": "Syllabus",
+       "href": "/assets/pdf/AIETM_MCA_R24_SYLLABUS.pdf",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n66",
+     "label": "MBA",
+     "href": "#",
+     "children": [
+      {
+       "id": "n63",
+       "label": "1st BOS",
+       "href": "/assets/pdf/meeting/1%20BOS%20MBA.pdf",
+       "children": []
+      },
+      {
+       "id": "n64",
+       "label": "2nd BOS",
+       "href": "/assets/a/2ND%20BOS%20MBA.pdf",
+       "children": []
+      },
+      {
+       "id": "n65",
+       "label": "Syllabus",
+       "href": "/assets/pdf/AIETM_MBA_R24_SYLLABUS.pdf",
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "n6r",
+     "label": "M.Tech",
+     "href": "#",
+     "children": [
+      {
+       "id": "n6a",
+       "label": "CSE",
+       "href": "#",
+       "children": [
+        {
+         "id": "n67",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/1%20DOS.CSE.pdf",
+         "children": []
+        },
+        {
+         "id": "n68",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20CSE.pdf",
+         "children": []
+        },
+        {
+         "id": "n69",
+         "label": "Syllabus",
+         "href": "/assets/pdf/AIETM_MTECH_CSE_R24_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n6e",
+       "label": "DECS",
+       "href": "#",
+       "children": [
+        {
+         "id": "n6b",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/First%20bos%20ece.pdf",
+         "children": []
+        },
+        {
+         "id": "n6c",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20ECE.pdf",
+         "children": []
+        },
+        {
+         "id": "n6d",
+         "label": "Syllabus",
+         "href": "/assets/pdf/AIETM_MTECH_DECS_R24_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n6i",
+       "label": "PE",
+       "href": "#",
+       "children": [
+        {
+         "id": "n6f",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/first%20bos%20eee.pdf",
+         "children": []
+        },
+        {
+         "id": "n6g",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20EEE.pdf",
+         "children": []
+        },
+        {
+         "id": "n6h",
+         "label": "Syllabus",
+         "href": "/assets/pdf/AIETM_MTECH_PE_R24_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n6m",
+       "label": "PS",
+       "href": "#",
+       "children": [
+        {
+         "id": "n6j",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/first%20bos%20eee.pdf",
+         "children": []
+        },
+        {
+         "id": "n6k",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20EEE.pdf",
+         "children": []
+        },
+        {
+         "id": "n6l",
+         "label": "Syllabus",
+         "href": "/assets/pdf/AIETM_MTECH_PS_R24_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "n6q",
+       "label": "VLSI",
+       "href": "#",
+       "children": [
+        {
+         "id": "n6n",
+         "label": "1st BOS",
+         "href": "/assets/pdf/meeting/First%20bos%20ece.pdf",
+         "children": []
+        },
+        {
+         "id": "n6o",
+         "label": "2nd BOS",
+         "href": "/assets/a/2ND%20BOS%20ECE.pdf",
+         "children": []
+        },
+        {
+         "id": "n6p",
+         "label": "Syllabus",
+         "href": "/assets/pdf/AIETM_MTECH_VLSID_R24_SYLLABUS.pdf",
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "n6s",
+     "label": "Academic Council Meeting",
+     "href": "/assets/pdf/meeting/AC%20FINAL-6-17.pdf",
+     "children": []
+    },
+    {
+     "id": "n6t",
+     "label": "Guidelines for B.Tech Honors",
+     "href": "/assets/pdf/meeting/AC%20FINAL-34-38.pdf",
+     "children": []
+    },
+    {
+     "id": "n6u",
+     "label": "Guidelines for B.Tech Minors",
+     "href": "/assets/pdf/meeting/AC%20FINAL-39-43.pdf",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n75",
+   "label": "Exam (Autonomous)",
+   "href": "#",
+   "children": [
+    {
+     "id": "n6w",
+     "label": "Controller of Examination",
+     "href": "/controllerofexamination",
+     "children": []
+    },
+    {
+     "id": "n6x",
+     "label": "Asst Controller of Examination",
+     "href": "/asstcontrollerofexamination",
+     "children": []
+    },
+    {
+     "id": "n6y",
+     "label": "Notifications",
+     "href": "/exams",
+     "children": []
+    },
+    {
+     "id": "n74",
+     "label": "Results(Autonomous)",
+     "href": "#",
+     "children": [
+      {
+       "id": "n6z",
+       "label": "RESULTS NOTIFICATION FEB-2025",
+       "href": "/assets/aietm-notice-result%20notification%20-%20feb%202025.pdf",
+       "children": []
+      },
+      {
+       "id": "n70",
+       "label": "BTech",
+       "href": "/btech",
+       "children": []
+      },
+      {
+       "id": "n71",
+       "label": "MTech",
+       "href": "/mtech",
+       "children": []
+      },
+      {
+       "id": "n72",
+       "label": "MBA",
+       "href": "/mba",
+       "children": []
+      },
+      {
+       "id": "n73",
+       "label": "MCA",
+       "href": "/mca",
+       "children": []
+      }
+     ]
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n77",
+   "label": "AQAR",
+   "href": "#",
+   "children": [
+    {
+     "id": "n76",
+     "label": "2023 - 2024",
+     "href": "/iqac2024",
+     "children": []
+    }
+   ],
+   "featured": false
+  },
+  {
+   "id": "n7a",
+   "label": "Placements",
+   "href": "#",
+   "children": [
+    {
+     "id": "n78",
+     "label": "2025 - 26",
+     "href": "/placements25_26",
+     "children": []
+    },
+    {
+     "id": "n79",
+     "label": "2024 - 25",
+     "href": "/placementts",
+     "children": []
+    }
+   ],
+   "featured": true
+  },
+  {
+   "id": "n7d",
+   "label": "Feedback",
+   "href": "#",
+   "children": [
+    {
+     "id": "n7b",
+     "label": "STUDENT FEEDBACK",
+     "href": "https://docs.google.com/forms/d/15_5ns0jsOwAoSPto2yShVmULGWH3mE5oMDkNpbDmdzk/viewform?edit_requested=true",
+     "children": []
+    },
+    {
+     "id": "n7c",
+     "label": "FACULTY FEEDBACK",
+     "href": "https://docs.google.com/forms/d/11AC4YnE_HZY_-E9UsWpxjPybwJxWTNNQWbAw5i3Q7tc/viewform?edit_requested=true#responses",
+     "children": []
+    }
+   ],
+   "featured": false
+  }
+ ],
+ "hero": [
+  {
+   "id": "oh3bx7u1",
+   "image": "/assets/images/carousel-images/2.jpg",
+   "caption": ""
+  },
+  {
+   "id": "qdztql2r",
+   "image": "/assets/images/carousel-images/3.jpg",
+   "caption": ""
+  },
+  {
+   "id": "b784oddm",
+   "image": "/assets/images/carousel-images/4.jpg",
+   "caption": ""
+  },
+  {
+   "id": "90gtf8wl",
+   "image": "/assets/images/carousel-images/5.jpg",
+   "caption": ""
+  },
+  {
+   "id": "ohcfm3k4",
+   "image": "/assets/images/carousel-images/6.jpg",
+   "caption": ""
+  },
+  {
+   "id": "67utkgxm",
+   "image": "/assets/images/carousel-images/7.jpg",
+   "caption": ""
+  },
+  {
+   "id": "zrqxu2vy",
+   "image": "/assets/images/carousel-images/8.jpg",
+   "caption": ""
+  },
+  {
+   "id": "e988cdp8",
+   "image": "/assets/images/carousel-images/9.jpg",
+   "caption": ""
+  },
+  {
+   "id": "ssxlzfam",
+   "image": "/assets/images/carousel-images/10.jpg",
+   "caption": ""
+  },
+  {
+   "id": "ewfx2zkg",
+   "image": "/assets/images/carousel-images/11.jpg",
+   "caption": ""
+  },
+  {
+   "id": "kd31t9ie",
+   "image": "/assets/images/carousel-images/12.jpg",
+   "caption": ""
+  },
+  {
+   "id": "f2iwjduy",
+   "image": "/assets/images/carousel-images/13.jpg",
+   "caption": ""
+  },
+  {
+   "id": "5xd5n9ir",
+   "image": "/assets/images/carousel-images/14.jpg",
+   "caption": ""
+  },
+  {
+   "id": "p5gtxrsm",
+   "image": "/assets/images/carousel-images/15.jpg",
+   "caption": ""
+  }
+ ],
+ "popups": [
+  {
+   "id": "dlohkn6x",
+   "image": "/assets/a/popup10.jpeg",
+   "link": ""
+  },
+  {
+   "id": "5n3jvcji",
+   "image": "/assets/a/aaaaaaa001.jpeg",
+   "link": ""
+  },
+  {
+   "id": "5e9tgl17",
+   "image": "/assets/a/aaaaaaa002.jpeg",
+   "link": ""
+  },
+  {
+   "id": "b0jxwjv5",
+   "image": "/assets/a/aaaaaaa003.jpeg",
+   "link": ""
+  },
+  {
+   "id": "d9o2v4in",
+   "image": "/assets/a/aaaaaaa005.jpeg",
+   "link": ""
+  },
+  {
+   "id": "v40mx6v9",
+   "image": "/assets/images/about/514dfd93-2e8d-4b3e-b9dd-226208b99fd6.jpeg",
+   "link": ""
+  }
+ ],
+ "videos": [
+  {
+   "id": "bkypg9ek",
+   "src": "/assets/videos/V3%20(1).mp4"
+  },
+  {
+   "id": "gc1qyouw",
+   "src": "/assets/videos/v2%20(1)%20(1).mp4"
+  }
+ ],
+ "quick": [
+  {
+   "id": "5pbu5a2w",
+   "label": "Alumni Meet Registration",
+   "href": "https://forms.gle/1eTzLudk16qEtA4H8",
+   "icon": "users",
+   "hot": true
+  },
+  {
+   "id": "lqkonzko",
+   "label": "College Virtual Tour",
+   "href": "https://www.youtube.com/watch?si=618B4ja9Oin36XKI&v=upLx49pBJmY&feature=youtu.be",
+   "icon": "play",
+   "hot": false
+  },
+  {
+   "id": "hrgcv995",
+   "label": "ECAP Login",
+   "href": "https://webprosindia.com/avanthinrpm",
+   "icon": "login",
+   "hot": false
+  },
+  {
+   "id": "9gjsblc2",
+   "label": "Fee Online Payment",
+   "href": "https://easypay.axisbank.co.in/easyPay/makePayment?mid=NDY4ODY%3D",
+   "icon": "card",
+   "hot": false
+  },
+  {
+   "id": "cbmu5mkh",
+   "label": "Grievance",
+   "href": "https://forms.gle/J7Sa9tUyxgmvaBfx9",
+   "icon": "chat",
+   "hot": false
+  }
+ ],
+ "awardImages": [
+  {
+   "id": "405fpseg",
+   "image": "/assets/popban/pop4.jpg"
+  },
+  {
+   "id": "4kzlgal6",
+   "image": "/assets/images/carousel-images/A++_Apprec3.jpeg"
+  },
+  {
+   "id": "bk97qmqn",
+   "image": "/assets/images/carousel-images/A++_Apprec1.jpeg"
+  },
+  {
+   "id": "0141bcfh",
+   "image": "/assets/images/carousel-images/A++_Apprec2.jpeg"
+  }
+ ],
+ "results": [
+  {
+   "id": "wllif83e",
+   "year": "2026",
+   "title": "JNTUGV: RESULTS of the MCA IV SEM REGULAR & SUPPLEMENTARY EXAMINATIONS APRIL/MAY 2026, LAST DATE FOR REVALUATION IS 14-06-2026.",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "mq3taxmu",
+   "year": "2026",
+   "title": "JNTUGV: results for III B.Tech II Semester (R23) Regular & Supplementary Examinations held in March/April 2026",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "a4mut3lp",
+   "year": "2026",
+   "title": "JNTUGV: results of the III B.Tech II Semester (R23/R20/R19/R16) Regular & Supplementary Examinations held in March/April 2026 released",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "ab9g7kwa",
+   "year": "2026",
+   "title": "JNTUGV Results of - III B.Tech I Semester (R23/R20/R19/R16) Supplementary Examinations held in March/April 2026 have been released",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "mtbu353r",
+   "year": "2026",
+   "title": "JNTUGV Released Results of IV B Tech I Semester Advanced Supplementary Examinations-R20 Regulations held in February 2026",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "ewcnpacp",
+   "year": "2026",
+   "title": "JNTUGV Revaluation results of II B Tech I Semester Regular/Supplementary Examinations-R23,R20,R19&R16 Regulations held in November 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "00mra74v",
+   "year": "2025",
+   "title": "Results of II-II (R23/R20/R19/R16) B.TECH SUPPLY Examinations- (JNTUGV) held in Nov- 2025 is released",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "yjngei40",
+   "year": "2025",
+   "title": "Results of III-I (R20 & R19) and III-II (R19 & R16) Supplementary Examinations- (JNTUGV) held in Nov- 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "rpq88v2n",
+   "year": "2025",
+   "title": "I B Tech I Sem ( R20) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-1%20R20%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "h84lilmy",
+   "year": "2025",
+   "title": "I B Tech I Sem ( R23) Regular/ Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-1%20R23%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "sg6ek7mm",
+   "year": "2025",
+   "title": "I B Tech II Sem ( R19) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-2%20R19%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "bi7985qt",
+   "year": "2025",
+   "title": "I B Tech II Sem ( R16) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-2%20R16%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "er7uhilq",
+   "year": "2025",
+   "title": "I B Tech II Sem ( R23) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-2%20R23%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "cehlezqr",
+   "year": "2025",
+   "title": "I B Tech I Sem ( R16) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-1%20R16%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "9d0azrk2",
+   "year": "2025",
+   "title": "I B Tech II Sem ( R20) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-2%20R20%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "bhwjo9so",
+   "year": "2025",
+   "title": "I B Tech I Sem ( R19) Supplementary End Exam Time Table Dec 25/Jan 26",
+   "href": "/assets/a/1-1%20R19%20TT-JNTUGV.pdf"
+  },
+  {
+   "id": "xlzy33vd",
+   "year": "2025",
+   "title": "MCA II Sem Revolution Result is declared",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "0vbvjg79",
+   "year": "2025",
+   "title": "JNTUGV-Revaluation Results of I B Tech I Semester Supplementary & II Semester Supplementary Examinations-R23/R20/R19/R16 Regulations held in July 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "g5hmi25j",
+   "year": "2025",
+   "title": "JNTUGV MCA II SEM JULY 2025 RESULT - R20 Regulation",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "m7oehs4y",
+   "year": "2025",
+   "title": "MBA IV sem - May 25 Revaluation result is declared",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "o3uk7nqt",
+   "year": "2025",
+   "title": "Revaluation results of the II B.Tech I Semester (R23/R20/R19/R16) Supplementary Examinations conducted in May 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "aa6um800",
+   "year": "2025",
+   "title": "III B.Tech II Semester (R20/R19/R16 regulations) Regular/Supplementary Examinations held in April/May 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "ql3ri1y1",
+   "year": "2025",
+   "title": "MCA IV Semester Regular/Supplementary Examinations held in MARCH 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "us3brlsl",
+   "year": "2025",
+   "title": "JNTUGV IB Tech I Semester Supplementary Examinations-R23/R20/R19/R16 Regulations held in june 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "uod184fy",
+   "year": "2025",
+   "title": "II B.Tech II Semester (R20/R19/R16 regulations) Regular/Supplementary Examinations held in April/May 2025 RESULT LINK",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "jg5sjx45",
+   "year": "2025",
+   "title": "Revaluation results for the II B.Tech II Semester (R23/R20/R19/R16) Regular/Supplementary Examinations conducted in April 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "st56jmjv",
+   "year": "2025",
+   "title": "Result for MBA IV sem Examinations of may 2025 declared . the last date for apply revaluation is 25/7/2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "qxleh811",
+   "year": "2025",
+   "title": "Result for I B.Tech II SEM SUPPLY Examinations(R23,R20,R19R16)-JNTUGV of June 2025 declared . The last date for apply revaluation is 25/7/2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "jkkp3aa5",
+   "year": "2025",
+   "title": "Result for MCA IV sem may 2025 declared . the last date for apply revaluation is 16/7/2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "cby37gla",
+   "year": "2025",
+   "title": "II B.Tech I Semester (R23/R20/R19/R16) Supplementary Examinations Held in MAY 2025 - Apply for Revaluation on or before July 09, 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "q4871b9q",
+   "year": "2025",
+   "title": "III B.Tech I Semester (R20/R19/R16) Supplementary Examinations Held in April/May 2025 - Last Date to apply for Revaluation is : on or before July 03, 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "d0z99d0j",
+   "year": "2025",
+   "title": "III B.Tech II Semester (R20/R19/R16 regulations) Regular/Supplementary Examinations April/May 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "zf423bwk",
+   "year": "2025",
+   "title": "II B.TECH 2ND SEM Regular & Supply Examinations April 2025 (R23 , R19) results",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "0sp9hbw5",
+   "year": "2025",
+   "title": "III B.Tech. II Sem Supply Revaluation Results Jan 2025",
+   "href": "https://exams.jntugv.edu.in/results"
+  },
+  {
+   "id": "rrmomtfw",
+   "year": "2025",
+   "title": "II B.Tech I Sem Regular & Supply Revaluation Results Declared, Nov/Dec 2024",
+   "href": "https://exams.jntugv.edu.in/results"
+  }
+ ],
+ "notifications": [
+  {
+   "id": "7vm6kb95",
+   "year": "2026 - 2027",
+   "title": "JNTUGV 3-1 B.Tech Supply Notification Nov-2026",
+   "href": "/assets/pdf/oct/JNTUGV%203-1%20B.Tech%20Supply%20Notification%20Nov-2026.pdf"
+  },
+  {
+   "id": "xzo9ot8a",
+   "year": "2026 - 2027",
+   "title": "JNTUGV 4-1 BTECH NOTIFICATION -IV BTECH I SEM REG AND SUPPLY EXAMS NOVEMBER 2026",
+   "href": "/assets/pdf/oct/JNTUGV%204-1%20BTECH%20NOTIFICATION%20-IV%20BTECH%20I%20SEM%20REG%20AND%20SUPPLY%20EXAMS%20NOVEMBER%202026.pdf"
+  },
+  {
+   "id": "26jeyhjx",
+   "year": "2026 - 2027",
+   "title": "JNTUGV 4-2 BTECH NOTIFICATION -IV BTECH II SEM SUPPLY EXAMS NOVEMBER 2026",
+   "href": "/assets/pdf/oct/JNTUGV%204-2%20BTECH%20NOTIFICATION%20-IV%20BTECH%20II%20SEM%20SUPPLY%20EXAMS%20NOVEMBER%202026.pdf"
+  },
+  {
+   "id": "vo6xh4wh",
+   "year": "2026 - 2027",
+   "title": "JNTUGV- 2-1 B.Tech Supply Notification Nov-2026",
+   "href": "/assets/pdf/oct/JNTUGV-%202-1%20B.Tech%20Supply%20Notification%20Nov-2026.pdf"
+  },
+  {
+   "id": "7jmztzvo",
+   "year": "2026 - 2027",
+   "title": "JNTUGV-2-2 B.Tech Supply Notification Nov-2026",
+   "href": "/assets/pdf/oct/JNTUGV-2-2%20B.Tech%20Supply%20Notification%20Nov-2026.pdf"
+  },
+  {
+   "id": "d76gag5x",
+   "year": "2026 - 2027",
+   "title": "JNTUGV-3-2 B.Tech Supply Notification Nov-2026.pdf",
+   "href": "/assets/pdf/oct/JNTUGV-3-2%20B.Tech%20Supply%20Notification%20Nov-2026.pdf"
+  },
+  {
+   "id": "u7lmxce3",
+   "year": "",
+   "title": "M.TECH 2ND SEM SUPPLY R19 TIME-TABLE",
+   "href": "/assets/pdf/M.TECH%202ND%20SEM%20SUPPLY%20R19%20TIME-TABLE.pdf"
+  },
+  {
+   "id": "3lag3nox",
+   "year": "2025 - 2026",
+   "title": "JNTUK Special Supply UG_OR, NR & RR, R05, R07,R10 Batches Notification-June-2026",
+   "href": "/assets/pdf/JNTUK%20SPECIAL%20SUPPLY%20UG_OR,%20NR%20&%20RR,%20R05,%20R07,R10%20%20Batches%20Notification-June-2026.pdf"
+  },
+  {
+   "id": "9pfl3118",
+   "year": "2025 - 2026",
+   "title": "JNTUK Special Supply PG_2021 and prior Batches Notification-June-2026",
+   "href": "/assets/pdf/JNTUK%20SPECAIL%20SUPPLY%20PG_2021%20and%20prior%20Batches%20Notification-June-2026.pdf"
+  },
+  {
+   "id": "y1r7ux16",
+   "year": "2025 - 2026",
+   "title": "M.Tech - I Sem Regular & Supplementary Examination R24 Regulation",
+   "href": "/assets/pdf/M.Tech%20-%20I%20Sem%20Regular%20&%20Supplementary%20Examination%20R24%20Regulati.pdf"
+  },
+  {
+   "id": "1b8qek96",
+   "year": "2025 - 2026",
+   "title": "Diploma Exams Notification for Mar-April - 2026",
+   "href": "/assets/pdf/2.%20Diploma%20exams%20Notification%20for%20Mar-April'2026.pdf"
+  },
+  {
+   "id": "hfnkreyf",
+   "year": "2025 - 2026",
+   "title": "Notification - JNTUGV-UES-IV B.Tech I SEM Advanced Supply Exams - FEB - 2026",
+   "href": "/assets/a/NOTIFICATION-JNTUGV-UES-IV%20BTECH%20I%20SEM%20ADVANCED%20SUPPLE%20EXAMS-FEB-2026.pdf"
+  },
+  {
+   "id": "eg3egair",
+   "year": "2025 - 2026",
+   "title": "RV RC OCT NOV 2025",
+   "href": "/assets/pdf/RV%20RC%20OCT%20NOV%202025.pdf"
+  },
+  {
+   "id": "2ttyuwv9",
+   "year": "2025 - 2026",
+   "title": "I B Tech II Supply Exam Notification",
+   "href": "/assets/a/693.jpeg"
+  },
+  {
+   "id": "6f8avcb3",
+   "year": "2025 - 2026",
+   "title": "I B Tech II Sem Notification",
+   "href": "/assets/a/I%20B%20Tech%20II%20Sem%20Notification.pdf"
+  },
+  {
+   "id": "9vlehcz6",
+   "year": "2025 - 2026",
+   "title": "I B Tech I Sem Notification",
+   "href": "/assets/a/I%20B%20Tech%20I%20Sem%20Notification.pdf"
+  },
+  {
+   "id": "n7rb0h7k",
+   "year": "2025 - 2026",
+   "title": "II, III, IV B TECH - SEM Notifications",
+   "href": "/assets/a/AIETM%20-%20COMMENCEMENT%20OF%20CLASS%20WORK%20-%20NOV%202025%20(1).pdf"
+  },
+  {
+   "id": "s5mhoece",
+   "year": "2025 - 2026",
+   "title": "II B TECH - I Sem Regular Examination Notification",
+   "href": "/assets/pdf/DocScanner%20Oct%208,%202025%2012-22%20PM.pdf"
+  },
+  {
+   "id": "chs1hvuh",
+   "year": "2025 - 2026",
+   "title": "I M.TECH - II Sem Revolution Notification",
+   "href": "/assets/pdf/DocScanner%20Oct%208,%202025%2012-06%20PM.pdf"
+  },
+  {
+   "id": "1zqqe4c1",
+   "year": "2025 - 2026",
+   "title": "I MBA/MCA - II Sem Revolution Notification",
+   "href": "/assets/pdf/DocScanner%20Oct%208,%202025%2012-10%20PM.pdf"
+  },
+  {
+   "id": "0s8zrbaj",
+   "year": "2025 - 2026",
+   "title": "Diploma exams Oct-Nov 25 Notification Revised",
+   "href": "/assets/pdf/Diploma-exams-Oct-Nov-25-Notification-Revised.pdf"
+  },
+  {
+   "id": "wlzx1te6",
+   "year": "2025 - 2026",
+   "title": "IV B TECH I SEM R-16,19,20 REG & SUPPLY, OCT 2025",
+   "href": "/assets/pdf/IV%20B%20TECH%20I%20SEM%20REG%20&%20SUPPLY,%20OCT%202025.pdf"
+  },
+  {
+   "id": "46unax9q",
+   "year": "2025 - 2026",
+   "title": "III B.Tech I Reg_Supply R-16,19,20,23 Examinitions Notification, NOV 2025",
+   "href": "/assets/pdf/B.Tech%20III-I%20Reg_Supply%20Examinitions%20%20Notification_NOVMBER%202025%20(8)%20(1).pdf"
+  },
+  {
+   "id": "f2r12fp2",
+   "year": "2025 - 2026",
+   "title": "Diploma exams- Oct-Nov 25 Notification",
+   "href": "/assets/pdf/Diploma%20exams-%20Oct-Nov%2025%20Notification.pdf"
+  },
+  {
+   "id": "dha8sb42",
+   "year": "2024 - 2025",
+   "title": "Last date to apply for revaluation / recounting for I BTech – 1 sem (supply) JNTU_GV is 6th August 2025. Interseted can submit their applications along with prescribed fee in the college office",
+   "href": "/"
+  },
+  {
+   "id": "gtn2qgv2",
+   "year": "2024 - 2025",
+   "title": "STATE BOARD OF TECHNICAL EDUCATION AND TRAINING ANDHRA PRADESH::MANGALAGIRI",
+   "href": "/assets/pdf/exams/INSTANT%20PCRCRV%202025%20NOTIFICATION%202.pdf"
+  },
+  {
+   "id": "01z3init",
+   "year": "2024 - 2025",
+   "title": "IV B.TECH II Sem Adv Supple July 2025",
+   "href": "/assets/pdf/exams/Notification-4-2%20B.Tech%20Adv%20Supple%20July%202025.pdf"
+  },
+  {
+   "id": "eif590kk",
+   "year": "2024 - 2025",
+   "title": "JNTUGV - Examinations Postponed Circular 11.06.2025",
+   "href": "/assets/pdf/exams/RV-RC-PC%20NOTOFICATION-1-2.pdf"
+  },
+  {
+   "id": "z972cd98",
+   "year": "2024 - 2025",
+   "title": "II B.Tech I Sem Supply_April_ 2025",
+   "href": "/assets/pdf/exams/II%20B.Tech%20I%20Sem%20Supply_April_%202025.pdf"
+  },
+  {
+   "id": "6eo2b8lg",
+   "year": "2024 - 2025",
+   "title": "III B.TECH I Sem .TechSuplimentary Notification April2025",
+   "href": "/assets/pdf/exams/31B.TechSuplimentary%20Notification%20April2025.pdf"
+  },
+  {
+   "id": "winzfm0e",
+   "year": "2024 - 2025",
+   "title": "III B.TECH I Sem .TechSuplimentary Notification April2025",
+   "href": "/assets/pdf/exams/31B.TechSuplimentary%20Notification%20April2025.pdf"
+  },
+  {
+   "id": "kg2wf6d5",
+   "year": "2024 - 2025",
+   "title": "III B.TECH - II R20 Time table-April-2025",
+   "href": "/assets/pdf/exams/3-2%20R20%20Time%20table-April-2025.pdf"
+  }
+ ],
+ "timetables": [
+  {
+   "id": "2i02n0rw",
+   "title": "JNTUGV I B Tech II Sem R19 Supply Time Table June 2026",
+   "href": "/assets/pdf/JNTUGV%20%20I%20B%20Tech%20II%20Sem%20R19%20Supply%20Time%20Table%20June%202026.pdf"
+  },
+  {
+   "id": "ko0ecty9",
+   "title": "JNTUGV I B Tech I Sem R16 Supply Time Table June 2026",
+   "href": "/assets/pdf/JNTUGV%20I%20B%20Tech%20I%20Sem%20R16%20Supply%20Time%20Table%20June%202026.pdf"
+  },
+  {
+   "id": "0q3z2k3o",
+   "title": "JNTUGV I B Tech I Sem R19 Supply Time Table June 2026",
+   "href": "/assets/pdf/JNTUGV%20I%20B%20Tech%20I%20Sem%20R19%20Supply%20Time%20Table%20June%202026.pdf"
+  },
+  {
+   "id": "j1wumpiy",
+   "title": "JNTUGV I B Tech II Sem R20 Supply Time Table June 2026",
+   "href": "/assets/pdf/JNTUGV%20I%20B%20Tech%20II%20Sem%20R20%20Supply%20Time%20Table%20June%202026.pdf"
+  },
+  {
+   "id": "jki500wx",
+   "title": "JNTUGV I B Tech I Sem R20 Supply Time Table June 2026",
+   "href": "/assets/pdf/JNTUGV%20%20I%20B%20Tech%20I%20Sem%20R20%20Supply%20Time%20Table%20June%202026.pdf"
+  },
+  {
+   "id": "kgrb9ip5",
+   "title": "JNTUGV I B Tech II Sem R16 Supply Time Table June 2026",
+   "href": "/assets/pdf/JNTUGV%20%20I%20B%20Tech%20II%20Sem%20R16%20Supply%20Time%20Table%20June%202026.pdf"
+  },
+  {
+   "id": "epotcmv2",
+   "title": "MBA II SEMESTER R19 Supplementary Timetable",
+   "href": "/assets/pdf/MBA%20II%20SEMESTER%20R19%20Supplementary%20Timetable.pdf"
+  },
+  {
+   "id": "s2fkmkm0",
+   "title": "MCA II SEMESTER R20 Supplementary Timetable",
+   "href": "/assets/pdf/MCA%20II%20SEMESTER%20R20%20Supplementary%20Timetable.pdf"
+  },
+  {
+   "id": "t2ht60qi",
+   "title": "IV BTECH II SEM R19 SUPPLE EXAM Time Table-MARCH 2026",
+   "href": "/assets/pdf/IV%20BTECH%20II%20SEM%20R19%20SUPPLE%20%20EXAM%20Time%20Table-MARCH%202026.pdf"
+  },
+  {
+   "id": "gxaq47am",
+   "title": "IV BTECH I SEM R16 SUPPLE EXAM Time Table-MARCH 2026",
+   "href": "/assets/pdf/IV%20BTECH%20I%20SEM%20R16%20SUPPLE%20%20EXAM%20Time%20Table-MARCH%202026.pdf"
+  },
+  {
+   "id": "kg9jwjde",
+   "title": "M.Tech - I Semester ( R24 Regulation ) Regular & Supply Examination",
+   "href": "/assets/pdf/M.Tech%20-%20I%20Semester%20(%20R24%20Regulation%20)%20Regular%20&%20Supply%20Examina.pdf"
+  },
+  {
+   "id": "f9kapx2n",
+   "title": "M.TECH I SEMESTER (R24 REGULATION) MID-I EXAMINATIONS, FEBRUARY–2026",
+   "href": "/assets/pdf/ddd.pdf"
+  },
+  {
+   "id": "4wv2hzzl",
+   "title": "TIME TABLE-IV B. TECH – I SEMESTER (R20) ADVANCED SUPPLEMENTARY EXAMINATIONS, FEBRUARY - 2026",
+   "href": "/assets/pdf/TIME%20TABLE-IV%20B.%20TECH%20%E2%80%93%20I%20SEMESTER%20(R20)%20ADVANCED%20SUPPLEMENTARY%20EXAMINATIONS,%20FEBRUARY%20-%202026.pdf"
+  },
+  {
+   "id": "5htfu6d1",
+   "title": "MBA I SEM R 24 MID 2 TIME TABLE DEC 2025",
+   "href": "/assets/pdf/DocScanner%20Dec%202,%202025%2012-32%20PM.pdf"
+  },
+  {
+   "id": "w12r9izs",
+   "title": "MCA I SEM R 24 MID 2 TIME TABLE DEC 2025",
+   "href": "/assets/pdf/DocScanner%20Dec%202,%202025%2012-26%20PM.pdf"
+  },
+  {
+   "id": "9lxtrq5y",
+   "title": "II B.tech I SEM ( R-24) Lab External Examinations, Nov 2024",
+   "href": "/assets/pdf/DocScanner%20Nov%2012,%202025%2011-21%20AM.pdf"
+  },
+  {
+   "id": "n5llhyye",
+   "title": "I B.tech II SEM ( R-24) Supply Examinations, Nov 2024",
+   "href": "/assets/pdf/DocScanner%20Nov%2012,%202025%2011-23%20AM.pdf"
+  },
+  {
+   "id": "jfje0ogy",
+   "title": "TIME TABLE_3-2 SUPPLY R20 Examinations Nov2025",
+   "href": "/assets/pdf/TIME%20TABLE_3-2%20SUPPLY%20%20R20%20Examinations%20Nov2025.pdf"
+  },
+  {
+   "id": "t2ugs33x",
+   "title": "TIME TABLE_3-2 SUPPLY R16 Examinations Nov2025",
+   "href": "/assets/pdf/TIME%20TABLE_3-2%20SUPPLY%20%20R16%20Examinations%20Nov2025.pdf"
+  },
+  {
+   "id": "pfxxg2va",
+   "title": "TIME TABLE_3-2 SUPPLY R19 Examinations Nov2025",
+   "href": "/assets/pdf/TIME%20TABLE_3-2%20SUPPLY%20%20R19%20Examinations%20Nov2025.pdf"
+  },
+  {
+   "id": "w49nvgqn",
+   "title": "Time Table of IV B.Tech I sem (R20) Regular and supplementary exams October 2025",
+   "href": "/assets/a1/Time%20Table%20of%20IV%20B.Tech%20I%20sem%20(R20)%20Regular%20and%20%20supplementary%20exams%20October%202025.pdf"
+  },
+  {
+   "id": "d9tdg5lm",
+   "title": "TIME TABLE OF IV B. TECH – II SEMESTER (R19) SUPPLEMENTARY EXAMINATIONS, OCTOBER - 2025",
+   "href": "/assets/a1/TIME%20TABLE%20OF%20IV%20B.%20TECH%20%E2%80%93%20II%20SEMESTER%20(R19)%20SUPPLEMENTARY%20EXAMINATIONS,%20OCTOBER%20-%202025.pdf"
+  },
+  {
+   "id": "2hhlcbkw",
+   "title": "TIME TABLE IV B. TECH – I SEMESTER (R19) SUPPLEMENTARY EXAMINATIONS, OCT_NOV - 2025",
+   "href": "/assets/a1/TIME%20TABLE%20IV%20B.%20TECH%20%E2%80%93%20I%20SEMESTER%20(R19)%20SUPPLEMENTARY%20EXAMINATIONS,%20OCT_NOV%20-%202025.pdf"
+  },
+  {
+   "id": "s5v4at7q",
+   "title": "TIME TABLE OF IV B. TECH – II SEMESTER (R16) SUPPLEMENTARY EXAMINATIONS, OCTOBER - 2025",
+   "href": "/assets/a1/TIME%20TABLE%20OF%20IV%20B.%20TECH%20%E2%80%93%20II%20SEMESTER%20(R16)%20SUPPLEMENTARY%20EXAMINATIONS,%20OCTOBER%20-%202025.pdf"
+  },
+  {
+   "id": "tomrgik8",
+   "title": "3-1 R23 REG_SUPPLY TIME TABLE_Nov2025",
+   "href": "/assets/a1/3-1%20R23%20REG_SUPPLY%20TIME%20TABLE_Nov2025%20.pdf"
+  },
+  {
+   "id": "rbk92jx4",
+   "title": "3-1 R16 REG_SUPPLY TIME TABLE Nov2025",
+   "href": "/assets/a1/3-1%20R16%20REG_SUPPLY%20TIME%20TABLE%20Nov2025%20.pdf"
+  },
+  {
+   "id": "b02fm8nf",
+   "title": "3-1 R20 REG_SUPPLIMETARY TIME TABLE Nov-2025",
+   "href": "/assets/a1/3-1%20R20%20REG_SUPPLIMETARY%20TIME%20TABLE%20Nov-2025%20.pdf"
+  },
+  {
+   "id": "174d4vhm",
+   "title": "Diploma C-16 TIme Tables for OCT-NOV'2025.pdf",
+   "href": "/assets/a/C-16%20TIme%20Tables%20for%20OCT-NOV'2025.pdf"
+  },
+  {
+   "id": "3ipx3s37",
+   "title": "IV B.TECH I SEM (R20) REGULAR & SUPPLEMENTARY EXAMINATIONS TIME TABLE – OCTOBER/NOVEMBER 2025",
+   "href": "/assets/a/Time%20Table%20of%20IV%20B.Tech%20I%20sem%20(R20)%20Regular%20and%20%20supplementary%20exams%20October%202025.pdf"
+  },
+  {
+   "id": "tq5wn3c4",
+   "title": "IV B. TECH – I SEMESTER (R19) SUPPLEMENTARY EXAMINATIONS TIME TABLE, OCT_NOV - 2025",
+   "href": "/assets/a/TIME%20TABLE%20IV%20B.%20TECH%20%E2%80%93%20I%20SEMESTER%20(R19)%20SUPPLEMENTARY%20EXAMINATIONS,%20OCT_NOV%20-%202025.pdf"
+  },
+  {
+   "id": "7u6596u1",
+   "title": "IV B. TECH – I SEMESTER (R16) SUPPLEMENTARY EXAMINATIONS TIME TABLE, OCT_NOV - 2025",
+   "href": "/assets/a/TIME%20TABLE%20IV%20B.%20TECH%20%E2%80%93%20I%20SEMESTER%20(R16)%20SUPPLEMENTARY%20EXAMINATIONS,%20OCT_NOV%20-%202025.pdf"
+  },
+  {
+   "id": "jld2xq4f",
+   "title": "M.TECH 2ND SEM SUPPLY TIME TABLE, JUNE - 2025",
+   "href": "/assets/pdf/exams/M.TECH%202ND%20SEM%20SUPPLY%20TIME%20TABLE.pdf"
+  },
+  {
+   "id": "5duuvxzf",
+   "title": "I B.TECH - II SEMESTER (R23) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-%20II%20SEMESTER%20(R23)%20%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-5-6.pdf"
+  },
+  {
+   "id": "y8r30ttp",
+   "title": "I B.TECH - II SEMESTER (R19) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-%20II%20SEMESTER%20(R19)%20%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-2.pdf"
+  },
+  {
+   "id": "qg4un81v",
+   "title": "RI B.TECH -I SEMESTER (R20) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-I%20SEMESTER%20(R20)%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-3-4.pdf"
+  },
+  {
+   "id": "xr8spg5k",
+   "title": "I B.TECH -I SEMESTER (R23) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-I%20SEMESTER%20(R23)%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-5-6.pdf"
+  },
+  {
+   "id": "fox8zqgb",
+   "title": "I B.TECH - II SEMESTER (R16) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-%20II%20SEMESTER%20(R16)%20%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-1.pdf"
+  },
+  {
+   "id": "p8pbwv7z",
+   "title": "I B.TECH -I SEMESTER (R19) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-I%20SEMESTER%20(R19)%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-2.pdf"
+  },
+  {
+   "id": "a6zprbh3",
+   "title": "I B.TECH - II SEMESTER (R20) SUPPLEMENTARY EXAMINATIONS TIME TABLE,JUNE-2025",
+   "href": "/assets/pdf/exams/I%20B.TECH%20-%20II%20SEMESTER%20(R20)%20%20SUPPLEMENTARY%20EXAMINATIONS%20TIME%20TABLE,JUNE-2025-merged-3-4.pdf"
+  }
+ ],
+ "mission": [
+  {
+   "id": "hz9b7xbi",
+   "text": "To produce competent and highly motivated Engineers and Management professionals."
+  },
+  {
+   "id": "3c1yifjj",
+   "text": "To impart quality education with industrial exposure and professional training."
+  },
+  {
+   "id": "uiiyhh6r",
+   "text": "To instill self confidence among students which is an imperative pre requisite to face the challenges of life."
+  },
+  {
+   "id": "u7gvejb3",
+   "text": "To exhort the spirit of professional beyond academic excellence."
+  }
+ ],
+ "objectives": [
+  {
+   "id": "qt61y9dw",
+   "text": "To promote an integral and holistic growth of young and inquiring minds."
+  },
+  {
+   "id": "dh37pn5m",
+   "text": "To strengthen their confidence and competence to capably handle the emerging trends of their related fields."
+  }
+ ],
+ "features": [
+  {
+   "id": "b7n85mf0",
+   "text": "24 hours Internet Facility"
+  },
+  {
+   "id": "66pgl0xl",
+   "text": "Well Equipped Labs"
+  },
+  {
+   "id": "68y89ubb",
+   "text": "Sports & Recreational facilities"
+  },
+  {
+   "id": "vo4bxcns",
+   "text": "Separate Hostels for both Boys & Girls within the campus"
+  },
+  {
+   "id": "9zs0t10v",
+   "text": "Study Hours facilities for Hostellers"
+  },
+  {
+   "id": "rdoohe52",
+   "text": "Transport facility free for staff"
+  },
+  {
+   "id": "rqo8ftrg",
+   "text": "Modern Infrastructure facilities"
+  },
+  {
+   "id": "9k4g2ggo",
+   "text": "Experienced and Dedicated faculty"
+  },
+  {
+   "id": "4vwvv65e",
+   "text": "Placement Assistance"
+  },
+  {
+   "id": "3c3o8zec",
+   "text": "Excellent Results"
+  },
+  {
+   "id": "vjsuedw3",
+   "text": "Advanced Teaching Methods"
+  },
+  {
+   "id": "nbmtdphg",
+   "text": "Industrial Exposure"
+  },
+  {
+   "id": "969355e6",
+   "text": "Hygenic Canteen"
+  },
+  {
+   "id": "e4gsqnrg",
+   "text": "Gyamnasium"
+  },
+  {
+   "id": "gjuqn17s",
+   "text": "Students Activity Centre"
+  },
+  {
+   "id": "496ix6ae",
+   "text": "CRT & Communication Classes"
+  },
+  {
+   "id": "8wq72zgk",
+   "text": "NSS"
+  },
+  {
+   "id": "qmmuzi04",
+   "text": "Sports"
+  },
+  {
+   "id": "ibk6wd8m",
+   "text": "Seminars & Symposia"
+  }
+ ],
+ "courses": [
+  {
+   "id": "7cf348ez",
+   "group": "Regular - B.Tech, M.Tech & P.G.",
+   "program": "B.Tech",
+   "branches": "ECE, EEE, CSE, CSE(AI & ML), CSE(DS), MECH"
+  },
+  {
+   "id": "mbvg9yps",
+   "group": "Regular - B.Tech, M.Tech & P.G.",
+   "program": "M.Tech",
+   "branches": "PE, VLSI, CSE, PS, DECS"
+  },
+  {
+   "id": "lyokelwy",
+   "group": "Regular - B.Tech, M.Tech & P.G.",
+   "program": "P.G.",
+   "branches": "MCA, MBA & M.Tech."
+  },
+  {
+   "id": "z7gyhqlq",
+   "group": "2nd Shift - Polytechnic",
+   "program": "Polytechnic",
+   "branches": "DME, DEEE, DECE, DCME"
+  }
+ ],
+ "cultural": [
+  {
+   "id": "6f7r1735",
+   "image": "/assets/a/a3/1.jpeg",
+   "title": "Annual Appreciation Award from Indian Red Cross Society"
+  },
+  {
+   "id": "cg3o45k3",
+   "image": "/assets/images/page26/1.jpeg",
+   "title": "A two-day National Technical Meet Synergy 2026"
+  },
+  {
+   "id": "3b88k25j",
+   "image": "/assets/images/page25/1.jpeg",
+   "title": "A Pre-Pongal Events @2026"
+  },
+  {
+   "id": "1wd4kyza",
+   "image": "/assets/images/page23/2.jpeg",
+   "title": "Induction meet@2025"
+  },
+  {
+   "id": "hlr4gexw",
+   "image": "/assets/images/page22/1.jpeg",
+   "title": "10th NATIONAL AYURVEDA DAY - AYURVEDA AWARNESS PROGRAM @2025"
+  },
+  {
+   "id": "zpwdqwh4",
+   "image": "/assets/b/1.jpeg",
+   "title": "Anti Ragging Awareness Program@ addressed by DIG at Starhomes Narsipatnam"
+  },
+  {
+   "id": "ei3fv8a7",
+   "image": "/assets/images/page20/1.jpeg",
+   "title": "Engineering Day @2025"
+  }
+ ],
+ "events": [
+  {
+   "id": "n5q2edgt",
+   "image": "/assets/images/page333/WhatsApp%20Image%202026-09-30%20at%209.52.20%20PM.jpeg",
+   "title": "Freshers Day@2026",
+   "href": "/page33"
+  },
+  {
+   "id": "vmiq8glt",
+   "image": "/assets/images/page35/1.jpeg",
+   "title": "Induction Meet",
+   "href": "/induction_meet1"
+  },
+  {
+   "id": "vkb2i1lo",
+   "image": "/assets/images/page34/1.jpeg",
+   "title": "Diplomo Fresher party",
+   "href": "/di_frers_pty"
+  },
+  {
+   "id": "9o98icui",
+   "image": "/assets/images/page33/1.jpeg",
+   "title": "Btech Induction Meet 2026",
+   "href": "/btech_Intro_2026"
+  },
+  {
+   "id": "ze7h7wyn",
+   "image": "/assets/images/page32/1.jpeg",
+   "title": "Hackathon ignite 2026",
+   "href": "/hackathon_2026"
+  },
+  {
+   "id": "nv521pzj",
+   "image": "/assets/images/page31/1.jpeg",
+   "title": "Diploma Induction meet",
+   "href": "/Diploma_Induction_meet"
+  },
+  {
+   "id": "eqdcaxkv",
+   "image": "/assets/images/page30/15.jpeg",
+   "title": "5th July Alumni Meet Celebrations 2026",
+   "href": "/alumni_meet"
+  },
+  {
+   "id": "0xrw4ix4",
+   "image": "/assets/images/page29/2.jpeg",
+   "title": "12th Yoga day celebrations",
+   "href": "/yoga_day"
+  },
+  {
+   "id": "3gn7w1hx",
+   "image": "/assets/images/page28/3.jpeg",
+   "title": "Silver Jubliee (25th College Day) Celebrations & Inauguration of Silver Jubliee Block",
+   "href": "/silver_jubliee"
+  },
+  {
+   "id": "rpsm2qsz",
+   "image": "/assets/images/page27/1.jpeg",
+   "title": "Anti Drug campaign and Road safety awareness program organised by Dept of Police, AP and SFI.",
+   "href": "/anti_Drug_campaign"
+  },
+  {
+   "id": "wsnetxc4",
+   "image": "/assets/images/page26/1.jpeg",
+   "title": "A two-day National Technical Meet Synergy 2026",
+   "href": "/Technical_Meet"
+  },
+  {
+   "id": "ohglk3oz",
+   "image": "/assets/images/page25/1.jpeg",
+   "title": "Celebrations of Pre-Pongal Events @2026",
+   "href": "/prePongal_Events"
+  },
+  {
+   "id": "zo2rimcy",
+   "image": "/assets/a/popup1.jpeg",
+   "title": "A two day Technical Expo Srujana-2k25",
+   "href": "/Technical_Expo"
+  },
+  {
+   "id": "fi300ikt",
+   "image": "/assets/images/page23/1.jpeg",
+   "title": "Induction meet@2025",
+   "href": "/Induction_meet"
+  },
+  {
+   "id": "a6qa8c6v",
+   "image": "/assets/images/page22/1.jpeg",
+   "title": "10th NATIONAL AYURVEDA DAY - AYURVEDA AWARNESS PROGRAM @2025",
+   "href": "/AYURVEDA_DAY"
+  },
+  {
+   "id": "9y0fsivf",
+   "image": "/assets/b/1.jpeg",
+   "title": "Anti Ragging Awareness Program@ addressed by DIG at Starhomes Narsipatnam",
+   "href": "/Anti_Ragging"
+  },
+  {
+   "id": "wrjiclcj",
+   "image": "/assets/images/page20/1.jpeg",
+   "title": "Engineering Day @2025 Celebrations",
+   "href": "/engineering_day"
+  },
+  {
+   "id": "dj27wvha",
+   "image": "/assets/a/a3/1.jpeg",
+   "title": "Annual Appreciation Award from Indian Red Cross Society",
+   "href": "/annual_appreciation"
+  },
+  {
+   "id": "w8o9oc0a",
+   "image": "/assets/a1/1.jpeg",
+   "title": "Teacher's Day Celebrations at Seminar Hall @2025",
+   "href": "/teachers_day_2025"
+  },
+  {
+   "id": "p4vqqggr",
+   "image": "/assets/a/a2/1.jpeg",
+   "title": "National sports day celebrations",
+   "href": "/National_sports"
+  },
+  {
+   "id": "cjr8r9cu",
+   "image": "/assets/a/a1/1.jpeg",
+   "title": "Cyber crime, Drugs, Anti ragging and POCSO awareness held by District Police dept at AIET MAKAVARAPALEM Campus",
+   "href": "/Cyber_crime"
+  },
+  {
+   "id": "ir0fdca4",
+   "image": "/assets/a/a1.jpeg",
+   "title": "Btech 1st Year Induction meet Aug-2025",
+   "href": "/btech_1st"
+  },
+  {
+   "id": "x60hytuy",
+   "image": "/assets/a/1.jpeg",
+   "title": "Yogandhra Event on Yoga Day 2025",
+   "href": "/Yogandhra_Event"
+  },
+  {
+   "id": "yyzvmmjc",
+   "image": "/assets/ncc/1.jpeg",
+   "title": "NCC Annual Training camp, DS National Law University, Sabbavaram",
+   "href": "/NCC_Annual_Training"
+  },
+  {
+   "id": "b165mn1j",
+   "image": "/assets/about/b/WhatsApp%20Image%202025-06-06%20at%207.51.00%20AM.jpeg",
+   "title": "NSS, NCC and RED CROSS TEAMS Conducted World Environment Day Awreness Programs",
+   "href": "/NSS_NCC"
+  },
+  {
+   "id": "tw8l8tzl",
+   "image": "/assets/about/b/WhatsApp%20Image%202025-05-03%20at%2010.27.33%20AM.jpeg",
+   "title": "INDUSTRY CONNECT-2025",
+   "href": "/Industry_connect2025"
+  },
+  {
+   "id": "e06pz8ok",
+   "image": "/assets/about/a/21.jpeg",
+   "title": "Tech Vibe @ 25th Annual day celebrations",
+   "href": "/Tech_Vibe"
+  },
+  {
+   "id": "tntur7sv",
+   "image": "/assets/about/c2.jpg",
+   "title": "MAHA SHIVARATRI, We Honor our NCC, NSS, and Red Cross Volunteers for their Dedication to Community Service",
+   "href": "/assets/about/MAHA%20SHIVARATRI.jpg"
+  },
+  {
+   "id": "0gtsc3un",
+   "image": "/assets/about/dfs.jpg",
+   "title": "Industry Connect",
+   "href": "/industry_connect"
+  },
+  {
+   "id": "zalnphxj",
+   "image": "/assets/events/IMG-20250312-WA0004.jpg",
+   "title": "Traffic Awareness Program, Drug Abuse, Cyber Crime",
+   "href": "/Traffic_Awareness"
+  },
+  {
+   "id": "gor38yco",
+   "image": "/assets/events/IMG-20250312-WA0012.jpg",
+   "title": "International Women's Day Celebrations",
+   "href": "/womens_day"
+  },
+  {
+   "id": "rtx16sx3",
+   "image": "/assets/events/IMG-20250312-WA0018.jpg",
+   "title": "Awareness on Stress Management",
+   "href": "/stress_management"
+  },
+  {
+   "id": "ec7vjf2i",
+   "image": "/assets/events/1.jpeg",
+   "title": "Synergy 2025",
+   "href": "/synergy_2025"
+  }
+ ],
+ "info": [
+  {
+   "id": "e3qvxw2t",
+   "label": "Grievance",
+   "href": "https://forms.gle/J7Sa9tUyxgmvaBfx9"
+  },
+  {
+   "id": "94b2qx3e",
+   "label": "ECAP LOGIN (EMPLOYEE/STUDENT/PARENT)",
+   "href": "https://webprosindia.com/avanthinrpm"
+  },
+  {
+   "id": "s8lqdsjx",
+   "label": "Fee Online Payment",
+   "href": "https://easypay.axisbank.co.in/easyPay/makePayment?mid=NDY4ODY%3D"
+  },
+  {
+   "id": "3glwuun7",
+   "label": "BTECH – admissions – 2025 Category B (MQ) Application and instructions",
+   "href": "/assets/pdf/AIETM-b-category-%20application%20form-2025.pdf"
+  },
+  {
+   "id": "6wwrtcuu",
+   "label": "AIETM-ADMISSIONS BROUCHURE - 2025 (03/07/2025)",
+   "href": "/assets/pdf/AIETM-ADMISSIONS%20BROUCHURE%20-%202025.pdf"
+  }
+ ],
+ "institutions": [
+  {
+   "id": "xjix8a9a",
+   "name": "Avanthi Institute of Engineering & Technology",
+   "code": "EAMCET Code: AVEN",
+   "href": "/"
+  },
+  {
+   "id": "xcxra8fd",
+   "name": "Avanthi's St.Theressa Institute of Engineering & Technology",
+   "code": "EAMCET Code: ASTC",
+   "href": ""
+  },
+  {
+   "id": "p6w3yu4t",
+   "name": "Avanthi Institute of Engineering & Technology",
+   "code": "EAMCET Code: AVEV",
+   "href": ""
+  },
+  {
+   "id": "97mze1eu",
+   "name": "Avanthi's Research & Technological Academy",
+   "code": "EAMCET Code: ARTB",
+   "href": ""
+  },
+  {
+   "id": "p7gpimra",
+   "name": "Avanthi's Scientific Technological & Research Academy",
+   "code": "EAMCET Code: ASRA",
+   "href": ""
+  },
+  {
+   "id": "k1mdwu9e",
+   "name": "Avanthi Institute of Pharmaceutical Sciences",
+   "code": "EAMCET Code: AVHP",
+   "href": ""
+  },
+  {
+   "id": "hxqh53jg",
+   "name": "Avanthi's Post Graduate & Research Academy",
+   "code": "ICET Code: APRA",
+   "href": ""
+  },
+  {
+   "id": "tbsoiiey",
+   "name": "PG Colleges",
+   "code": "ICET Code: AVNT",
+   "href": ""
+  },
+  {
+   "id": "xa89c75s",
+   "name": "Avanthi Polytechnical college",
+   "code": "EAMCET Code: APCB",
+   "href": ""
+  }
+ ]
+}
