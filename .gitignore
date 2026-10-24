@@ -13,3 +13,6 @@ data/users.json
 data/messages.json
 data/activity.json
 data/stats.json
+
+# reference dumps used by the importer (never committed)
+_ref/

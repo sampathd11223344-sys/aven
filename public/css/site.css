@@ -488,10 +488,17 @@ mark { background: #fff1c2; color: inherit; border-radius: 3px; }
 .board-empty { padding: 40px; text-align: center; color: var(--muted); }
 
 /* Forms */
-.enquiry-form, .quick-form { display: grid; gap: 14px; }
-.enquiry-form label { display: grid; gap: 6px; font-size: .85rem; font-weight: 600; color: var(--navy); }
-.enquiry-form input, .enquiry-form select, .enquiry-form textarea { font: inherit; font-weight: 400; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); transition: border .2s; }
-.enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus { outline: 0; border-color: var(--blue); }
+.enquiry-form, .quick-form, .admission-form { display: grid; gap: 14px; }
+.enquiry-form label, .admission-form label { display: grid; gap: 6px; font-size: .85rem; font-weight: 600; color: var(--navy); }
+.enquiry-form input, .enquiry-form select, .enquiry-form textarea,
+.admission-form input, .admission-form select, .admission-form textarea { font: inherit; font-weight: 400; padding: 11px 14px; border: 1.5px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); transition: border .2s; width: 100%; }
+.enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus,
+.admission-form input:focus, .admission-form select:focus, .admission-form textarea:focus { outline: 0; border-color: var(--blue); }
+.admission-form label em { color: #c62828; font-style: normal; }
+.admission-form .form-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.admission-form-card { margin-top: 32px; padding: 28px; }
+.admission-form-card h3 { margin-top: 0; }
+.admission-form-card .form-intro { margin: 0 0 18px; color: var(--muted); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .hp { position: absolute !important; left: -9999px !important; }
 .form-status { font-size: .88rem; min-height: 1em; }
@@ -609,3 +616,13 @@ mark { background: #fff1c2; color: inherit; border-radius: 3px; }
   .admin-bar span { display: none; }
   .lightbox { padding: 20px; }
 }
+
+/* Toast for placeholder links / form feedback */
+.site-toast {
+  position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 24px);
+  background: var(--navy); color: #fff; padding: 12px 20px; border-radius: 12px;
+  font-size: .9rem; line-height: 1.4; max-width: min(92vw, 520px); z-index: 300;
+  box-shadow: 0 14px 40px rgba(8, 26, 51, .35); opacity: 0; pointer-events: none;
+  transition: opacity .2s, transform .2s;
+}
+.site-toast.show { opacity: 1; transform: translate(-50%, 0); }

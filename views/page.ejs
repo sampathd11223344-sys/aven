@@ -33,6 +33,7 @@
       <% } %>
       <article class="content<%= isCommittee ? ' committee' : '' %>">
         <%- page.html %>
+        <% if (page.slug === 'admissionforms') { %><%- include('partials/admission-form') %><% } %>
       </article>
     </div>
   </section>

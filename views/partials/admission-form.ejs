@@ -1,0 +1,61 @@
+<%
+  /* Admission enquiry form – the same fields as the original /admissionforms page.
+     The original posted to the college's PHP endpoint; here it is stored in the
+     admin inbox (/admin → Enquiries) so the button actually submits. */
+  const courses = [
+    'B.Tech – CSE',
+    'B.Tech – CSE (Data Science)',
+    'B.Tech – CSE (Artificial Intelligence & Machine Learning)',
+    'B.Tech – ECE',
+    'B.Tech – EEE',
+    'B.Tech – Mechanical',
+    'M.Tech – CSE (Artificial Intelligence & Machine Learning)',
+    'M.Tech – CSE',
+    'M.Tech – VLSI',
+    'M.Tech – CAD/CAM Engineering',
+    'M.Tech – Power Electronics',
+    'M.Tech – Power Systems',
+    'MCA',
+    'MBA',
+    'Diploma',
+    'Other',
+  ];
+%>
+<div class="card admission-form-card reveal" id="admission-enquiry">
+  <h3>Admission Enquiry</h3>
+  <p class="form-intro">Start your journey with <%= S.name %>. Fill in the details below and our admissions team will contact you.</p>
+  <form class="admission-form" action="/enquiry" method="post" data-ajax data-success="Thank you! Your admission enquiry has been received. Our admissions team will contact you soon.">
+    <input type="hidden" name="back" value="/admissionforms">
+    <input type="hidden" name="subject" value="Admission enquiry">
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <div class="form-row">
+      <label>Full Name <em>*</em><input type="text" name="fullnames" required maxlength="120" placeholder="Enter your full name" autocomplete="name"></label>
+      <label>Date of Birth <em>*</em><input type="date" name="birth" required></label>
+    </div>
+
+    <label>Address <em>*</em><textarea name="addresss" rows="2" required maxlength="400" placeholder="Enter your communication address"></textarea></label>
+
+    <div class="form-row">
+      <label>Contact Number <em>*</em><input type="tel" name="contacts" required maxlength="20" placeholder="Enter your phone number" autocomplete="tel"></label>
+      <label>Email Address <em>*</em><input type="email" name="emails" required maxlength="160" placeholder="Enter your email address" autocomplete="email"></label>
+    </div>
+
+    <div class="form-row">
+      <label>Course Interested <em>*</em>
+        <select name="courses" required>
+          <option value="">Select Course</option>
+          <% courses.forEach(c => { %><option value="<%= c %>"><%= c %></option><% }) %>
+        </select>
+      </label>
+      <label>Qualification <em>*</em><input type="text" name="qualifications" required maxlength="120" placeholder="e.g. Intermediate, Diploma, etc."></label>
+    </div>
+
+    <label>Message<textarea name="messages" rows="3" maxlength="2000" placeholder="Any additional information you'd like to provide"></textarea></label>
+
+    <div class="form-actions">
+      <button class="btn btn-accent" type="submit"><%- icon('send') %> Submit Enquiry</button>
+      <p class="form-status" role="status"></p>
+    </div>
+  </form>
+</div>

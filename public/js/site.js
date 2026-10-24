@@ -33,6 +33,28 @@
     document.addEventListener("click", (e) => { if (!navList.contains(e.target)) closeAll(); });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeAll(); });
 
+    // hover to open, exactly like the original menu (pointer devices only)
+    if (matchMedia("(hover: hover)").matches) {
+      let hoverTimer;
+      $$(".nav-item.has-dd", navList).forEach((li) => {
+        li.addEventListener("mouseenter", () => {
+          clearTimeout(hoverTimer);
+          closeAll(li);
+          li.classList.add("open");
+          const b = li.querySelector(":scope > button");
+          b && b.setAttribute("aria-expanded", "true");
+        });
+        li.addEventListener("mouseleave", () => {
+          hoverTimer = setTimeout(() => {
+            li.classList.remove("open");
+            const b = li.querySelector(":scope > button");
+            b && b.setAttribute("aria-expanded", "false");
+          }, 180);
+        });
+      });
+      navList.addEventListener("focusout", (e) => { if (!navList.contains(e.relatedTarget)) closeAll(); });
+    }
+
     // priority+ : hide items that do not fit (they are always available in "All Menus")
     const fit = () => {
       const items = $$(".nav-item", navList);
@@ -184,10 +206,17 @@
   /* ---------- floating promo video ---------- */
   const fv = $("#floatVideo");
   if (fv && !sessionStorage.getItem("aiet-video-closed")) {
-    const list = JSON.parse(fv.dataset.videos || "[]");
+    let list = [];
+    try { list = JSON.parse(fv.dataset.videos || "[]"); } catch (e) { list = []; }
+    if (!list.length) fv.remove();
     const v = $("video", fv);
     let i = 0;
-    const load = () => { v.src = list[i]; v.play().catch(() => {}); };
+    const load = () => {
+      if (!list.length) return;
+      v.src = list[i];
+      const p = v.play();
+      if (p && typeof p.catch === "function") p.catch(() => {}); /* older browsers return undefined */
+    };
     fv.hidden = false;
     setTimeout(load, 1500);
     fv.addEventListener("click", (e) => {
@@ -240,9 +269,27 @@
       $$("button", bar)[panes.findIndex((p) => p.classList.contains("active"))].classList.add("active");
       tc.parentNode.insertBefore(bar, tc);
     });
-    // lightbox for content images
+    // links the original site left empty (href="#") do not jump to the top;
+    // they explain themselves instead of looking broken
+    content.addEventListener("click", (e) => {
+      const a = e.target.closest('a[href="#"], a[href=""]');
+      if (!a) return;
+      e.preventDefault();
+      const label = (a.textContent || "").trim().replace(/\s+/g, " ");
+      toast(label ? `${label} — not published on the college website yet.` : "This item is not published on the college website yet.");
+    });
+
+    // lightbox for content images (including images wrapped in a link to the image file)
     const lb = $("#lightbox");
-    const imgs = $$("img", content).filter((im) => !im.closest("a"));
+    const imgs = $$("img", content).filter((im) => {
+      const a = im.closest("a");
+      if (!a) return true;
+      return /\.(jpe?g|png|gif|webp)$/i.test(a.getAttribute("href") || "");
+    });
+    imgs.forEach((im) => {
+      const a = im.closest("a");
+      if (a) a.addEventListener("click", (e) => e.preventDefault());
+    });
     let li = 0;
     const show = (n) => { li = (n + imgs.length) % imgs.length; $("img", lb).src = imgs[li].currentSrc || imgs[li].src; lb.hidden = false; };
     imgs.forEach((im, n) => im.addEventListener("click", () => show(n)));
@@ -262,7 +309,23 @@
     $$("img", content).forEach((im) => im.addEventListener("error", () => { im.style.display = "none"; }));
   }
 
-  /* ---------- AJAX forms (enquiry / quick contact) ---------- */
+  /* ---------- toast helper ---------- */
+  function toast(text) {
+    let t = $("#siteToast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "siteToast";
+      t.className = "site-toast";
+      t.setAttribute("role", "status");
+      document.body.appendChild(t);
+    }
+    t.textContent = text;
+    t.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => t.classList.remove("show"), 4200);
+  }
+
+  /* ---------- AJAX forms (enquiry / quick contact / admission) ---------- */
   $$("form[data-ajax]").forEach((f) => f.addEventListener("submit", async (e) => {
     e.preventDefault();
     const st = $(".form-status", f);
@@ -276,7 +339,8 @@
       if (!r.ok) throw new Error(j.error || "Could not send. Please try again.");
       f.reset();
       st.className = "form-status ok";
-      st.textContent = "Thank you! Your message has been sent.";
+      st.textContent = f.dataset.success || "Thank you! Your message has been sent.";
+      toast("Your message has been sent.");
     } catch (err) {
       st.className = "form-status err";
       st.textContent = err.message;

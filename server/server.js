@@ -142,17 +142,35 @@ app.post("/enquiry", (req, res) => {
   const hits = (enquiryHits.get(req.ip) || []).filter((t) => now - t < 3600_000);
   if (hits.length >= 8) return done(429, "Too many messages, please try later.");
   const clean = (v, n) => String(v || "").replace(/[<>]/g, "").trim().slice(0, n);
+  /* The admission form (/admissionforms) uses the original site's field names. */
+  const isAdmission = !!(b.fullnames || b.courses || b.qualifications);
+  const extra = {};
+  for (const [k, n] of [["birth", 40], ["addresss", 400], ["courses", 120], ["qualifications", 160], ["messages", 2000]]) {
+    const v = clean(b[k], n);
+    if (v) extra[k] = v;
+  }
   const msg = {
     id: Math.random().toString(36).slice(2, 10) + now.toString(36),
-    name: clean(b.name, 120),
-    email: clean(b.email, 160),
-    phone: clean(b.phone, 30),
-    subject: clean(b.subject, 160) || "Website enquiry",
-    message: clean(b.message, 4000),
-    page: clean(b.back, 200),
+    name: clean(b.name || b.fullnames, 120),
+    email: clean(b.email || b.emails, 160),
+    phone: clean(b.phone || b.contacts, 30),
+    subject: clean(b.subject, 160) || (isAdmission ? "Admission enquiry" : "Website enquiry"),
+    message: (() => {
+      const body = clean(b.message ?? b.messages, 4000);
+      if (!isAdmission) return body;
+      const details = [
+        "Course interested: " + (extra.courses || "—"),
+        extra.qualifications ? "Qualification: " + extra.qualifications : "",
+        extra.birth ? "Date of birth: " + extra.birth : "",
+        extra.addresss ? "Address: " + extra.addresss : "",
+      ].filter(Boolean).join("\n");
+      return [body, details].filter(Boolean).join("\n\n");
+    })(),
+    page: clean(b.back, 200) || (isAdmission ? "/admissionforms" : ""),
     at: new Date().toISOString(),
     read: false,
   };
+  if (Object.keys(extra).length) msg.extra = extra;
   if (!msg.name || (!msg.email && !msg.phone) || !msg.message) return done(400, "Please fill name, email or phone, and message.");
   if (msg.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(msg.email)) return done(400, "Please enter a valid email.");
   hits.push(now);

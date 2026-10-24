@@ -7,6 +7,8 @@ The content and the URLs are the same as the original site. Only the UI/UX is ne
 - The **full menu** (24 sections, 265 links) is included. A navy bar shows the main sections with fly-out sub-menus, and the searchable **“All Menus”** overlay lists every link.
 - **Images, PDFs and videos** (`/assets/...`) are served from the original domain, unless a file has been uploaded locally through the admin panel.
 - Old static-site URLs such as `/about.html` redirect to the new paths.
+- **Every control from the original site works the same way:** menus open on hover *and* on click, the notice board switches tabs, the gallery and event images open a lightbox, the original tabs on the M.Tech/B.Tech pages switch panes, the popup slider scrolls, the floating video plays/mutes/advances, and the **admission enquiry form** on `/admissionforms` (the only form on the original site) submits and lands in the admin inbox.
+- Placeholder links the college itself left empty (`href="#"`, e.g. balance sheets that were never uploaded) no longer jump to the top of the page — they show a short “not published yet” notice instead.
 
 ## Run
 
@@ -37,7 +39,7 @@ The default login is **`admin` / `Avanthi@2026`**. The panel asks you to change 
 | Pages | Search and filter all 907 pages, edit them in a rich-text editor (Jodit, with HTML source mode and a media library), create, delete, set drafts and change URLs |
 | Menus | Tree editor for the main menu (reorder, nest, choose which items appear in the header bar) and for the top-bar links |
 | Media library | Upload images, PDFs, Office files and videos, copy their links, delete them |
-| Enquiries | Messages from the contact page and footer forms: read/unread, reply by email, export to CSV |
+| Enquiries | Messages from the contact page, footer form and the admission enquiry form: read/unread, reply by email, export to CSV |
 | Site settings | Name, logos, Apply/brochure links, contact details, map, footer institutions, SEO |
 | Users | Administrator and editor accounts (admin only) |
 | Backups | Automatic snapshots with one-click restore, plus full JSON export and import (admin only) |
