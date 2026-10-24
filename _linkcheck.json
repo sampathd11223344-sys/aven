@@ -1,6 +1,6 @@
 {
  "total": 3568,
- "bad": 196,
+ "bad": 199,
  "failures": [
   {
    "href": "/assets/pdf/AntiRaggingcommittee2019-20.pdf",
@@ -8,6 +8,38 @@
    "kind": "asset",
    "status": 404,
    "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/NSS_NCC1?section=events&year=2022-23",
+   "url": "https://avanthienggcollege.ac.in/NSS_NCC1?section=events&year=2022-23",
+   "kind": "page",
+   "status": 500,
+   "type": "text/html; charset=UTF-8",
+   "bad": true
+  },
+  {
+   "href": "/NSS_NCC1?section=events&year=2023-24",
+   "url": "https://avanthienggcollege.ac.in/NSS_NCC1?section=events&year=2023-24",
+   "kind": "page",
+   "status": 500,
+   "type": "text/html; charset=UTF-8",
+   "bad": true
+  },
+  {
+   "href": "/NSS_NCC1?section=events&year=2025-26",
+   "url": "https://avanthienggcollege.ac.in/NSS_NCC1?section=events&year=2025-26",
+   "kind": "page",
+   "status": 500,
+   "type": "text/html; charset=UTF-8",
+   "bad": true
+  },
+  {
+   "href": "/NSS_NCC1?section=committee_members&year=2021-22",
+   "url": "https://avanthienggcollege.ac.in/NSS_NCC1?section=committee_members&year=2021-22",
+   "kind": "page",
+   "status": 500,
+   "type": "text/html; charset=UTF-8",
    "bad": true
   },
   {
@@ -35,9 +67,9 @@
    "bad": true
   },
   {
-   "href": "https://avanthienggcollege.ac.in/civil",
+   "href": "/civil",
    "url": "https://avanthienggcollege.ac.in/civil",
-   "kind": "external",
+   "kind": "page",
    "status": 500,
    "type": "text/html; charset=UTF-8",
    "bad": true
@@ -51,9 +83,17 @@
    "bad": true
   },
   {
-   "href": "https://avanthienggcollege.ac.in/StudentExperimentalLearning_2021",
+   "href": "/cultural_committee?section=events&year=2025-26",
+   "url": "https://avanthienggcollege.ac.in/cultural_committee?section=events&year=2025-26",
+   "kind": "page",
+   "status": 500,
+   "type": "text/html; charset=UTF-8",
+   "bad": true
+  },
+  {
+   "href": "/StudentExperimentalLearning_2021",
    "url": "https://avanthienggcollege.ac.in/StudentExperimentalLearning_2021",
-   "kind": "external",
+   "kind": "page",
    "status": 404,
    "type": "text/html; charset=UTF-8",
    "bad": true
@@ -115,30 +155,6 @@
    "bad": true
   },
   {
-   "href": "/examination_committee?section=results",
-   "url": "https://avanthienggcollege.ac.in/examination_committee?section=results",
-   "kind": "page",
-   "status": 500,
-   "type": "text/html; charset=UTF-8",
-   "bad": true
-  },
-  {
-   "href": "/examination_committee?section=circular",
-   "url": "https://avanthienggcollege.ac.in/examination_committee?section=circular",
-   "kind": "page",
-   "status": 500,
-   "type": "text/html; charset=UTF-8",
-   "bad": true
-  },
-  {
-   "href": "/examination_committee?section=roll_of_honour",
-   "url": "https://avanthienggcollege.ac.in/examination_committee?section=roll_of_honour",
-   "kind": "page",
-   "status": 500,
-   "type": "text/html; charset=UTF-8",
-   "bad": true
-  },
-  {
    "href": "/assets/a/NOTIFICATION%20FOR%20I%20B%20TECH%20II%20SEM%20SUPPLY%20EXAMS%20JUNE%202026.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/a/NOTIFICATION%20FOR%20I%20B%20TECH%20II%20SEM%20SUPPLY%20EXAMS%20JUNE%202026.pdf",
    "kind": "asset",
@@ -147,16 +163,16 @@
    "bad": true
   },
   {
-   "href": "/assets/a/NOTIFICATION%20FOR%20I%20B%20TECH%20I%20SEM%20SUPPLY%20EXAMS%20JUNE%202026.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/a/NOTIFICATION%20FOR%20I%20B%20TECH%20I%20SEM%20SUPPLY%20EXAMS%20JUNE%202026.pdf",
+   "href": "/assets/a/M.Tech%20Project%20Viva%20Notification%20PPhase%20I%20May-2026.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/a/M.Tech%20Project%20Viva%20Notification%20PPhase%20I%20May-2026.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/a/M.Tech%20Project%20Viva%20Notification%20PPhase%20I%20May-2026.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/a/M.Tech%20Project%20Viva%20Notification%20PPhase%20I%20May-2026.pdf",
+   "href": "/assets/a/NOTIFICATION%20FOR%20I%20B%20TECH%20I%20SEM%20SUPPLY%20EXAMS%20JUNE%202026.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/a/NOTIFICATION%20FOR%20I%20B%20TECH%20I%20SEM%20SUPPLY%20EXAMS%20JUNE%202026.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -379,14 +395,6 @@
    "bad": true
   },
   {
-   "href": "/assets/pdf/AcademicAdministrativeAudit_2018-19.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/AcademicAdministrativeAudit_2018-19.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
    "href": "/assets/pdf/AcademicAdministrativeAudit_2019-20.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/pdf/AcademicAdministrativeAudit_2019-20.pdf",
    "kind": "asset",
@@ -395,8 +403,8 @@
    "bad": true
   },
   {
-   "href": "/assets/pdf/AQARReports_2021-22.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2021-22.pdf",
+   "href": "/assets/pdf/AcademicAdministrativeAudit_2018-19.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/AcademicAdministrativeAudit_2018-19.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -411,8 +419,8 @@
    "bad": true
   },
   {
-   "href": "/assets/pdf/AQARReports_2020-21.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2020-21.pdf",
+   "href": "/assets/pdf/AQARReports_2021-22.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2021-22.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -427,8 +435,8 @@
    "bad": true
   },
   {
-   "href": "/assets/pdf/AQARReports_2018-19.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2018-19.pdf",
+   "href": "/assets/pdf/AQARReports_2020-21.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2020-21.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -437,6 +445,14 @@
   {
    "href": "/assets/pdf/AQARReports_2017-18.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2017-18.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/assets/pdf/AQARReports_2018-19.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/AQARReports_2018-19.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -467,6 +483,14 @@
    "bad": true
   },
   {
+   "href": "/assets/pdf/IQACMOM_2018-19.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/IQACMOM_2018-19.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
    "href": "/assets/pdf/IQACMOM_2019-20.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/pdf/IQACMOM_2019-20.pdf",
    "kind": "asset",
@@ -477,22 +501,6 @@
   {
    "href": "/assets/pdf/IQACMOM_2017-18.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/pdf/IQACMOM_2017-18.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
-   "href": "/assets/pdf/IQACMOM_2018-19.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/IQACMOM_2018-19.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
-   "href": "/assets/pdf/policies_21-22.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/policies_21-22.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -515,16 +523,16 @@
    "bad": true
   },
   {
-   "href": "/assets/pdf/policies_20-21.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/policies_20-21.pdf",
+   "href": "/assets/pdf/policies_21-22.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/policies_21-22.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/pdf/best-practices_20-21.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/best-practices_20-21.pdf",
+   "href": "/assets/pdf/policies_20-21.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/policies_20-21.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -539,8 +547,8 @@
    "bad": true
   },
   {
-   "href": "/assets/pdf/best-practices_18-19.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/pdf/best-practices_18-19.pdf",
+   "href": "/assets/pdf/best-practices_20-21.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/best-practices_20-21.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -549,6 +557,22 @@
   {
    "href": "/assets/pdf/institu-distinct_18-19.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/pdf/institu-distinct_18-19.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/iqac/policies_18-19.pdf",
+   "url": "https://avanthienggcollege.ac.in/iqac/policies_18-19.pdf",
+   "kind": "page",
+   "status": 404,
+   "type": "text/html; charset=UTF-8",
+   "bad": true
+  },
+  {
+   "href": "/assets/pdf/best-practices_18-19.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/pdf/best-practices_18-19.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -675,8 +699,8 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P6.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P6.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P5.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P5.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -691,8 +715,8 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P5.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P5.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P6.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P6.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -707,16 +731,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P9.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P9.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P10.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P10.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P10.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P10.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P9.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P9.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -739,16 +763,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P14.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P14.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P13.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P13.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P13.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P13.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P14.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P14.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -779,14 +803,6 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P19.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P19.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
    "href": "/assets/Projects/2017-18/MBA/P18.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P18.pdf",
    "kind": "asset",
@@ -795,16 +811,24 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P21.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P21.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P19.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P19.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P24.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P24.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P20.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P20.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/assets/Projects/2017-18/MBA/P21.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P21.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -827,16 +851,8 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P20.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P20.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
-   "href": "/assets/Projects/2017-18/MBA/P25.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P25.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P24.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P24.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -851,8 +867,8 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P27.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P27.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P25.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P25.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -867,16 +883,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P29.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P29.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P27.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P27.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P31.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P31.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P29.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P29.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -891,8 +907,32 @@
    "bad": true
   },
   {
+   "href": "/assets/Projects/2017-18/MBA/P31.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P31.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
    "href": "/assets/Projects/2017-18/MBA/P32.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P32.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/assets/Projects/2017-18/MBA/P34.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P34.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/assets/Projects/2017-18/MBA/P35.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P35.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -909,22 +949,6 @@
   {
    "href": "/assets/Projects/2017-18/MBA/P36.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P36.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
-   "href": "/assets/Projects/2017-18/MBA/P35.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P35.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
-   "href": "/assets/Projects/2017-18/MBA/P34.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P34.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -963,8 +987,8 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P42.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P42.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P41.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P41.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -979,8 +1003,8 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2017-18/MBA/P41.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P41.pdf",
+   "href": "/assets/Projects/2017-18/MBA/P42.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2017-18/MBA/P42.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1131,6 +1155,14 @@
    "bad": true
   },
   {
+   "href": "/assets/Projects/2019-20/MBA/P3.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P3.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
    "href": "/assets/Projects/2019-20/MBA/P2.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P2.pdf",
    "kind": "asset",
@@ -1147,14 +1179,6 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P5.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P5.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
    "href": "/assets/Projects/2019-20/MBA/P6.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P6.pdf",
    "kind": "asset",
@@ -1163,16 +1187,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P7.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P7.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P5.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P5.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P3.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P3.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P7.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P7.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1195,16 +1219,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P10.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P10.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P11.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P11.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P11.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P11.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P10.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P10.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1251,14 +1275,6 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P19.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P19.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
    "href": "/assets/Projects/2019-20/MBA/P17.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P17.pdf",
    "kind": "asset",
@@ -1267,16 +1283,24 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P20.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P20.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P18.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P18.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P18.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P18.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P19.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P19.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/assets/Projects/2019-20/MBA/P20.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P20.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1339,6 +1363,22 @@
    "bad": true
   },
   {
+   "href": "/assets/Projects/2019-20/MBA/P28.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P28.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
+   "href": "/assets/Projects/2019-20/MBA/P29.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P29.pdf",
+   "kind": "asset",
+   "status": 404,
+   "type": "text/html",
+   "bad": true
+  },
+  {
    "href": "/assets/Projects/2019-20/MBA/P30.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P30.pdf",
    "kind": "asset",
@@ -1363,22 +1403,6 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P29.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P29.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
-   "href": "/assets/Projects/2019-20/MBA/P28.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P28.pdf",
-   "kind": "asset",
-   "status": 404,
-   "type": "text/html",
-   "bad": true
-  },
-  {
    "href": "/assets/Projects/2019-20/MBA/P33.pdf",
    "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P33.pdf",
    "kind": "asset",
@@ -1387,16 +1411,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P34.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P34.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P35.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P35.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P35.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P35.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P34.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P34.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1443,16 +1467,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P42.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P42.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P41.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P41.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P41.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P41.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P42.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P42.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1467,16 +1491,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P45.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P45.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P44.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P44.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P44.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P44.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P45.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P45.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
@@ -1523,16 +1547,16 @@
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P52.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P52.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P51.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P51.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
    "bad": true
   },
   {
-   "href": "/assets/Projects/2019-20/MBA/P51.pdf",
-   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P51.pdf",
+   "href": "/assets/Projects/2019-20/MBA/P52.pdf",
+   "url": "https://avanthienggcollege.ac.in/assets/Projects/2019-20/MBA/P52.pdf",
    "kind": "asset",
    "status": 404,
    "type": "text/html",
